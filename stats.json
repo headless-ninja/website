@@ -1,92 +1,96 @@
 {
   "assetsByChunkName": {
     "path---tags-other": [
-      "path---tags-other-a805c5081b3a332fc927.js",
-      "path---tags-other-a805c5081b3a332fc927.js.map"
+      "path---tags-other-d3375dcb32cbe77b1163.js",
+      "path---tags-other-d3375dcb32cbe77b1163.js.map"
     ],
     "path---tags-programming": [
-      "path---tags-programming-e7aa2c51f327c8007691.js",
-      "path---tags-programming-e7aa2c51f327c8007691.js.map"
+      "path---tags-programming-1112f8f0f90861157a63.js",
+      "path---tags-programming-1112f8f0f90861157a63.js.map"
     ],
     "path---": [
-      "path----6611940bd40871b680a6.js",
-      "path----6611940bd40871b680a6.js.map"
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
     ],
     "path---lesson-one": [
-      "path---lesson-one-8e297b22c61d4c28d98e.js",
-      "path---lesson-one-8e297b22c61d4c28d98e.js.map"
+      "path---lesson-one-9026548207da5742b763.js",
+      "path---lesson-one-9026548207da5742b763.js.map"
     ],
     "component---src-layouts-index-jsx": [
-      "component---src-layouts-index-jsx-456ec6ef97a64b3ca988.js",
-      "component---src-layouts-index-jsx-456ec6ef97a64b3ca988.js.map"
+      "component---src-layouts-index-jsx-21ce1950d0bf9316de16.js",
+      "component---src-layouts-index-jsx-21ce1950d0bf9316de16.js.map"
     ],
     "path---categories-tech": [
-      "path---categories-tech-b25da34b0df9836a45af.js",
-      "path---categories-tech-b25da34b0df9836a45af.js.map"
+      "path---categories-tech-ad1762628a732c7bf0e0.js",
+      "path---categories-tech-ad1762628a732c7bf0e0.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-templates-lesson-jsx": [
-      "component---src-templates-lesson-jsx-d6fc5ddd03aa819a7164.js",
-      "component---src-templates-lesson-jsx-d6fc5ddd03aa819a7164.js.map"
+      "component---src-templates-lesson-jsx-fcfb6d14bddecc0151f6.js",
+      "component---src-templates-lesson-jsx-fcfb6d14bddecc0151f6.js.map"
     ],
     "path---lesson-two": [
-      "path---lesson-two-bf26437a87b54ac3cc2a.js",
-      "path---lesson-two-bf26437a87b54ac3cc2a.js.map"
+      "path---lesson-two-081832618df825c875b1.js",
+      "path---lesson-two-081832618df825c875b1.js.map"
     ],
     "component---src-templates-category-jsx": [
-      "component---src-templates-category-jsx-3a50fee79b9519c47f96.js",
-      "component---src-templates-category-jsx-3a50fee79b9519c47f96.js.map"
+      "component---src-templates-category-jsx-97fe193414e8873c25e9.js",
+      "component---src-templates-category-jsx-97fe193414e8873c25e9.js.map"
     ],
     "path---index": [
-      "path---index-9738944bd647f5decf53.js",
-      "path---index-9738944bd647f5decf53.js.map"
+      "path---index-54f6876505e2975d067b.js",
+      "path---index-54f6876505e2975d067b.js.map"
     ],
     "component---src-pages-about-jsx": [
-      "component---src-pages-about-jsx-7247ea099eae92a74885.js",
-      "component---src-pages-about-jsx-7247ea099eae92a74885.js.map"
+      "component---src-pages-about-jsx-d407821e8cff2ea58852.js",
+      "component---src-pages-about-jsx-d407821e8cff2ea58852.js.map"
     ],
     "path---post-one": [
-      "path---post-one-c5ce1d4b08a57ad8cf05.js",
-      "path---post-one-c5ce1d4b08a57ad8cf05.js.map"
+      "path---post-one-e7c6f23dac58b934430d.js",
+      "path---post-one-e7c6f23dac58b934430d.js.map"
     ],
     "commons": [
-      "commons-eb35855a815673c36764.js",
-      "commons-eb35855a815673c36764.js.map"
+      "commons-190313181e62f8be4c48.js",
+      "build-js-styles.css",
+      "commons-190313181e62f8be4c48.js.map",
+      "build-js-styles.css.map"
     ],
     "path---lesson-three": [
-      "path---lesson-three-496818983bc4883dacd3.js",
-      "path---lesson-three-496818983bc4883dacd3.js.map"
+      "path---lesson-three-94aac80970ffdb945dc5.js",
+      "path---lesson-three-94aac80970ffdb945dc5.js.map"
     ],
     "component---src-templates-tag-jsx": [
-      "component---src-templates-tag-jsx-6d724a4bbcff12c3ea7c.js",
-      "component---src-templates-tag-jsx-6d724a4bbcff12c3ea7c.js.map"
+      "component---src-templates-tag-jsx-d8c6cf3f3cc203bda324.js",
+      "component---src-templates-tag-jsx-d8c6cf3f3cc203bda324.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
-      "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js",
-      "path---offline-plugin-app-shell-fallback-586c7e095e534a3909ec.js.map"
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-templates-post-jsx": [
-      "component---src-templates-post-jsx-58355a77d7c54cb4bff1.js",
-      "component---src-templates-post-jsx-58355a77d7c54cb4bff1.js.map"
+      "component---src-templates-post-jsx-177a6cd8e2964a5ab312.js",
+      "component---src-templates-post-jsx-177a6cd8e2964a5ab312.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-8e5f0fee38d6fda15c12.js",
-      "component---src-pages-index-jsx-8e5f0fee38d6fda15c12.js.map"
+      "component---src-pages-index-jsx-ba68d013aa7fbf145f6d.js",
+      "component---src-pages-index-jsx-ba68d013aa7fbf145f6d.js.map"
     ],
     "app": [
-      "app-58e888ea6d9ec9c1325c.js",
-      "app-58e888ea6d9ec9c1325c.js.map"
+      "app-df612f64ea85f914bb89.js",
+      "build-js-styles.css",
+      "app-df612f64ea85f914bb89.js.map",
+      "build-js-styles.css.map"
     ],
     "path---tags-stuff": [
-      "path---tags-stuff-8deecaa9ed01bc595b47.js",
-      "path---tags-stuff-8deecaa9ed01bc595b47.js.map"
+      "path---tags-stuff-9107a795be557bdf65b4.js",
+      "path---tags-stuff-9107a795be557bdf65b4.js.map"
     ],
     "path---about": [
-      "path---about-586c7e095e534a3909ec.js",
-      "path---about-586c7e095e534a3909ec.js.map"
+      "path---about-a0e39f21c11f6a62c5ab.js",
+      "path---about-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
