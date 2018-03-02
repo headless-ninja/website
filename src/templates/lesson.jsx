@@ -1,11 +1,11 @@
-import React from "react";
-import Helmet from "react-helmet";
-import styled from "styled-components"
+import React from 'react';
+import Helmet from 'react-helmet';
+import styled from 'styled-components';
 
-import SEO from "../components/SEO/SEO"
-import SiteHeader from '../components/Layout/Header'
-import config from "../../data/SiteConfig"
-import TableOfContents from "../components/Layout/TableOfContents";
+import SEO from '../components/SEO/SEO';
+import SiteHeader from '../components/Layout/Header';
+import config from '../../data/SiteConfig';
+import TableOfContents from '../components/Layout/TableOfContents';
 
 export default class LessonTemplate extends React.Component {
   render() {
@@ -37,9 +37,7 @@ export default class LessonTemplate extends React.Component {
           </ToCContainer>
           <BodyContainer>
             <div>
-              <h1>
-                {post.title}
-              </h1>
+              <h1>{post.title}</h1>
               <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
             </div>
           </BodyContainer>
@@ -54,13 +52,13 @@ const BodyGrid = styled.div`
   display: grid;
   grid-template-rows: 75px 1fr;
   grid-template-columns: 300px 1fr;
-  
+
   @media screen and (max-width: 600px) {
     display: flex;
     flex-direction: column;
     height: inherit;
   }
-`
+`;
 
 const BodyContainer = styled.div`
   grid-column: 2 / 3;
@@ -72,69 +70,69 @@ const BodyContainer = styled.div`
   @media screen and (max-width: 600px) {
     order: 2;
   }
-  
+
   & > div {
     max-width: ${props => props.theme.contentWidthLaptop};
     margin: auto;
   }
-  
+
   & > h1 {
     color: ${props => props.theme.accentDark};
   }
-`
+`;
 
 const HeaderContainer = styled.div`
   grid-column: 1 / 3;
   grid-row: 1 / 2;
   z-index: 2;
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     order: 1;
   }
-`
+`;
 
 const ToCContainer = styled.div`
   grid-column: 1 / 2;
   grid-row: 2 / 3;
   background: ${props => props.theme.lightGrey};
   overflow: scroll;
-   @media screen and (max-width: 600px) {
+  @media screen and (max-width: 600px) {
     order: 3;
     overflow: inherit;
   }
-`
+`;
 
-/* eslint no-undef: "off"*/
+/* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query LessonBySlug($slug: String!) {
-    allPostTitles: allMarkdownRemark{
-        edges {
-          node {
-            frontmatter {
-              title
-              lesson
-              chapter
-              type
-            }
-            fields {
-              slug
-            }
+    allPostTitles: allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            title
+            lesson
+            chapter
+            type
+          }
+          fields {
+            slug
           }
         }
       }
-      postBySlug: markdownRemark(fields: { slug: { eq: $slug } }) {
-        html
-        timeToRead
-        excerpt
-        frontmatter {
-          title
-          cover
-          date
-          category
-          tags
-        }
-        fields {
-          slug
-        }
-      } 
+    }
+    postBySlug: markdownRemark(fields: { slug: { eq: $slug } }) {
+      html
+      timeToRead
+      excerpt
+      frontmatter {
+        title
+        cover
+        date
+        category
+        tags
+      }
+      fields {
+        slug
+      }
+    }
   }
 `;

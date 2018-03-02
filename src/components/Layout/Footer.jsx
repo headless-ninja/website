@@ -1,15 +1,13 @@
-import React from "react"
-import styled from 'styled-components'
+import React from 'react';
 
 class Footer extends React.Component {
-
   render() {
-    return(
+    return (
       <section>
         <h1>Footer</h1>
       </section>
-    )
+    );
   }
 }
 
-export default Footer
+export default Footer;
