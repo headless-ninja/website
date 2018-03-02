@@ -40,7 +40,7 @@ class TableOfContents extends React.Component {
   nodeListItems() {
     const postNodeChapters = this.buildNodes();
     const listItems = [];
-    const chapterTitles = this.props.chapterTitles;
+    const { chapterTitles } = this.props;
     postNodeChapters.forEach((chapter, idx) => {
       const chapterLessons = [];
       chapter.forEach(node => {
