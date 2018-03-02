@@ -62,17 +62,14 @@
   "license": "MIT",
   "main": "n/a",
   "scripts": {
-    "develop": "gatsby develop",
-    "dev": "npm run develop",
-    "serve": "gatsby serve",
+    "start": "gatsby develop",
     "build": "gatsby build",
-    "build:pp": "gatsby build --prefix-paths",
-    "build:gh": "npm run clean && npm run build:pp && gh-pages -d public",
-    "clean": "rm -rf public",
+    "serve-build": "gatsby serve",
+    "test": "yarn lint:js",
     "lint:js": "eslint --ext .js,.jsx .",
-    "lint:js:fix": "yarn lint:js -- --fix",
-    "lint:md": "remark content/posts/",
-    "write-good": "write-good $(glob 'content/posts/**/*.md')"
+    "lint:md": "remark content/",
+    "format": "yarn lint:js -- --fix",
+    "write-good": "write-good $(glob 'content/**/*.md')"
   },
   "remarkConfig": {
     "plugins": [
