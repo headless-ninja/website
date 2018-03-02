@@ -4,7 +4,6 @@
 <url> <loc>https://ericwindmill.com/lesson-one</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ericwindmill.com/lesson-three</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ericwindmill.com/lesson-two</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://ericwindmill.com/post-one</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ericwindmill.com/tags/programming/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ericwindmill.com/tags/stuff/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://ericwindmill.com/tags/other/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
