@@ -2,7 +2,6 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import SEO from '../components/SEO/SEO';
 import SiteHeader from '../components/Layout/Header';
 import config from '../../data/SiteConfig';
 import TableOfContents from '../components/Layout/TableOfContents';
@@ -20,10 +19,7 @@ export default class LessonTemplate extends React.Component {
     }
     return (
       <div>
-        <Helmet>
-          <title>{`${post.title} | ${config.siteTitle}`}</title>
-        </Helmet>
-        <SEO postPath={slug} postNode={postNode} postSEO />
+        <Helmet title={`${post.title} | Headless Ninja`} />
         <BodyGrid>
           <HeaderContainer>
             <SiteHeader location={this.props.location} />

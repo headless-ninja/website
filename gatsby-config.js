@@ -49,8 +49,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-manifest',
       options: {
-        name: config.siteTitle,
-        short_name: config.siteTitle,
+        name: 'Headless Ninja',
+        short_name: 'Headless Ninja',
         description: config.siteDescription,
         start_url: config.pathPrefix,
         background_color: config.backgroundColor,
