@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
-import config from '../../data/SiteConfig';
+import logo from '../images/logo.png';
 import Navigation from '../components/Layout/Navigation';
 
 class Index extends React.Component {
@@ -14,7 +14,7 @@ class Index extends React.Component {
           <IndexHeadContainer>
             <Navigation />
             <Hero>
-              <img src={config.siteLogo} width="150px" alt="" />
+              <img src={logo} width="150px" alt="" />
               <h1>Headless Ninja</h1>
               <h4>
                 Drupal{' '}
