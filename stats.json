@@ -1,12 +1,12 @@
 {
   "assetsByChunkName": {
+    "path---docs-lesson-two": [
+      "path---docs-lesson-two-064c1e3c6cac3bdf363a.js",
+      "path---docs-lesson-two-064c1e3c6cac3bdf363a.js.map"
+    ],
     "path---": [
       "path----557518bd178906f8d58a.js",
       "path----557518bd178906f8d58a.js.map"
-    ],
-    "path---lesson-one": [
-      "path---lesson-one-d5627db7fabdc03c5035.js",
-      "path---lesson-one-d5627db7fabdc03c5035.js.map"
     ],
     "component---src-layouts-index-jsx": [
       "component---src-layouts-index-jsx-e18f8229a5f7666e7475.js",
@@ -16,42 +16,42 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
-    "component---src-templates-lesson-jsx": [
-      "component---src-templates-lesson-jsx-cac70e27ebc1b87fed3d.js",
-      "component---src-templates-lesson-jsx-cac70e27ebc1b87fed3d.js.map"
+    "component---src-templates-docs-jsx": [
+      "component---src-templates-docs-jsx-924f84e34dd01ea22dff.js",
+      "component---src-templates-docs-jsx-924f84e34dd01ea22dff.js.map"
     ],
-    "path---lesson-two": [
-      "path---lesson-two-b77c76c824856b2c076f.js",
-      "path---lesson-two-b77c76c824856b2c076f.js.map"
+    "path---docs-lesson-one": [
+      "path---docs-lesson-one-8d75d2019138487fdf00.js",
+      "path---docs-lesson-one-8d75d2019138487fdf00.js.map"
     ],
     "path---index": [
-      "path---index-d0ad82fea00e4075a0ff.js",
-      "path---index-d0ad82fea00e4075a0ff.js.map"
+      "path---index-9d4807d370d09b1cec4b.js",
+      "path---index-9d4807d370d09b1cec4b.js.map"
     ],
     "component---src-pages-about-jsx": [
-      "component---src-pages-about-jsx-76b0c3fc29332e4dfbde.js",
-      "component---src-pages-about-jsx-76b0c3fc29332e4dfbde.js.map"
+      "component---src-pages-about-jsx-de74ee4743e0471badae.js",
+      "component---src-pages-about-jsx-de74ee4743e0471badae.js.map"
+    ],
+    "path---docs-lesson-three": [
+      "path---docs-lesson-three-4e31a03a67b927cdc0da.js",
+      "path---docs-lesson-three-4e31a03a67b927cdc0da.js.map"
     ],
     "commons": [
       "commons-0b62ef755962640c9477.js",
       "commons-0b62ef755962640c9477.js.map"
-    ],
-    "path---lesson-three": [
-      "path---lesson-three-680d2285e8bd6b26152a.js",
-      "path---lesson-three-680d2285e8bd6b26152a.js.map"
     ],
     "path---offline-plugin-app-shell-fallback": [
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-jsx": [
-      "component---src-pages-index-jsx-a1ebefee3f34b9e1833f.js",
-      "component---src-pages-index-jsx-a1ebefee3f34b9e1833f.js.map"
+      "component---src-pages-index-jsx-4691362385bce62bd028.js",
+      "component---src-pages-index-jsx-4691362385bce62bd028.js.map"
     ],
     "app": [
-      "app-c5062e88a9f2322c6b41.js",
+      "app-642d36f7cd3ed2399e5c.js",
       "build-js-styles.css",
-      "app-c5062e88a9f2322c6b41.js.map",
+      "app-642d36f7cd3ed2399e5c.js.map",
       "build-js-styles.css.map"
     ],
     "path---about": [
