@@ -3,20 +3,12 @@ import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
 import SiteHeader from '../components/Layout/Header';
-import config from '../../data/SiteConfig';
 import TableOfContents from '../components/Layout/TableOfContents';
 
 export default class LessonTemplate extends React.Component {
   render() {
-    const { slug } = this.props.pathContext;
     const postNode = this.props.data.postBySlug;
     const post = postNode.frontmatter;
-    if (!post.id) {
-      post.id = slug;
-    }
-    if (!post.id) {
-      post.category_id = config.postDefaultCategoryID;
-    }
     return (
       <div>
         <Helmet title={`${post.title} | Headless Ninja`} />
@@ -28,7 +20,7 @@ export default class LessonTemplate extends React.Component {
             <TableOfContents
               posts={this.props.data.allPostTitles.edges}
               contentsType="lesson"
-              chapterTitles={config.toCChapters}
+              chapterTitles={['', 'Chapter 1', 'Chapter 2']}
             />
           </ToCContainer>
           <BodyContainer>
