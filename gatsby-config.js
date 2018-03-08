@@ -1,12 +1,4 @@
-const config = require('./data/SiteConfig');
-
-const pathPrefix = config.pathPrefix === '/' ? '' : config.pathPrefix;
-
 module.exports = {
-  pathPrefix: config.pathPrefix,
-  siteMetadata: {
-    siteUrl: config.siteUrl + pathPrefix,
-  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
@@ -49,24 +41,8 @@ module.exports = {
       resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Headless Ninja',
-        short_name: 'Headless Ninja',
-        description: config.siteDescription,
-        start_url: config.pathPrefix,
-        background_color: config.backgroundColor,
-        theme_color: config.themeColor,
+        start_url: '/',
         display: 'minimal-ui',
-        icons: [
-          {
-            src: '/logos/logo-192x192.png',
-            sizes: '192x192',
-            type: 'image/png',
-          },
-          {
-            src: '/logos/logo-512x512.png',
-            sizes: '512x512',
-            type: 'image/png',
-          },
-        ],
       },
     },
     'gatsby-plugin-offline',
