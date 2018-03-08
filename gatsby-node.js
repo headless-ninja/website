@@ -7,21 +7,20 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     const slug = createFilePath({
       node,
       getNode,
-      basePath: 'lessons',
       trailingSlash: false,
     });
 
     createNodeField({
       node,
       name: 'slug',
-      value: slug,
+      value: `/docs${slug}`,
     });
   }
 };
 
 exports.createPages = async ({ graphql, boundActionCreators }) => {
   const { createPage } = boundActionCreators;
-  const lessonPage = path.resolve('src/templates/lesson.jsx');
+  const lessonPage = path.resolve('src/templates/docs.jsx');
   const result = await graphql(`
     {
       allMarkdownRemark {
