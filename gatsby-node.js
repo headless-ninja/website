@@ -26,11 +26,6 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
       allMarkdownRemark {
         edges {
           node {
-            frontmatter {
-              tags
-              category
-              type
-            }
             fields {
               slug
             }

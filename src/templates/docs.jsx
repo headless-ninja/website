@@ -2,31 +2,31 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
+import site from '../../content/site.yml';
 import SiteHeader from '../components/Layout/Header';
 import TableOfContents from '../components/Layout/TableOfContents';
 
 export default class LessonTemplate extends React.Component {
   render() {
-    const postNode = this.props.data.postBySlug;
-    const post = postNode.frontmatter;
+    const item = this.props.data.docsItem.frontmatter;
     return (
       <div>
-        <Helmet title={`${post.title} | Headless Ninja`} />
+        <Helmet title={`${item.title} | ${site.title}`} />
         <BodyGrid>
           <HeaderContainer>
             <SiteHeader location={this.props.location} />
           </HeaderContainer>
           <ToCContainer>
-            <TableOfContents
-              posts={this.props.data.allPostTitles.edges}
-              contentsType="lesson"
-              chapterTitles={['', 'Chapter 1', 'Chapter 2']}
-            />
+            <TableOfContents docs={this.props.data.allDocs.edges} />
           </ToCContainer>
           <BodyContainer>
             <div>
-              <h1>{post.title}</h1>
-              <div dangerouslySetInnerHTML={{ __html: postNode.html }} />
+              <h1>{item.title}</h1>
+              <div
+                dangerouslySetInnerHTML={{
+                  __html: this.props.data.docsItem.html,
+                }}
+              />
             </div>
           </BodyContainer>
         </BodyGrid>
@@ -92,14 +92,13 @@ const ToCContainer = styled.div`
 /* eslint no-undef: "off" */
 export const pageQuery = graphql`
   query LessonBySlug($slug: String!) {
-    allPostTitles: allMarkdownRemark {
+    allDocs: allMarkdownRemark(sort: { fields: [frontmatter___weight] }) {
       edges {
         node {
           frontmatter {
             title
-            lesson
-            chapter
-            type
+            category
+            stub
           }
           fields {
             slug
@@ -107,16 +106,11 @@ export const pageQuery = graphql`
         }
       }
     }
-    postBySlug: markdownRemark(fields: { slug: { eq: $slug } }) {
+    docsItem: markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      timeToRead
-      excerpt
       frontmatter {
         title
-        cover
-        date
         category
-        tags
       }
       fields {
         slug
