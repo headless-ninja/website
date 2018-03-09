@@ -2,6 +2,8 @@ import React from 'react';
 import Helmet from 'react-helmet';
 import styled from 'styled-components';
 
+import site from '../../content/site.yml';
+
 import MainHeader from '../components/Layout/Header';
 
 const BodyContainer = styled.div`
@@ -12,7 +14,7 @@ class AboutPage extends React.Component {
   render() {
     return (
       <div className="index-container">
-        <Helmet title="About Headless Ninja" />
+        <Helmet title={`About ${site.title}`} />
         <main>
           <MainHeader />
           <BodyContainer>
