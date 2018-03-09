@@ -1,4 +1,8 @@
 module.exports = {
+  siteMetadata: {
+    // This is used by gatsby-plugin-sitemap
+    siteUrl: `http://headless.ninja`,
+  },
   plugins: [
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
