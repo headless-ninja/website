@@ -4,6 +4,7 @@ import { ThemeProvider } from 'styled-components';
 import './css/index.css';
 import './css/prism-okaidia.css';
 import theme from './theme';
+import site from '../../content/site.yml';
 
 export default class MainLayout extends React.Component {
   render() {
@@ -11,10 +12,7 @@ export default class MainLayout extends React.Component {
     return (
       <div>
         <Helmet>
-          <meta
-            name="description"
-            content="Headless Ninja combines the best of Drupal and React."
-          />
+          <meta name="description" content={site.description} />
         </Helmet>
         <ThemeProvider theme={theme}>{children()}</ThemeProvider>
       </div>
