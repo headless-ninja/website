@@ -22,6 +22,9 @@ class Index extends React.Component {
               <img src={logo} width="150px" alt="" />
               <h1>{site.title}</h1>
               <h4>{site.description}</h4>
+              <br />
+              <br />
+              {homepage.cta.map(({ to, label }) => <CTA to={to}>{label}</CTA>)}
             </Hero>
           </IndexHeadContainer>
 
@@ -126,4 +129,12 @@ const Hero = styled.div`
   & > h1 {
     font-weight: 600;
   }
+`;
+
+const CTA = styled(Link)`
+  margin: 10px;
+  padding: 20px;
+  background: white;
+  color: ${props => props.theme.brand};
+  border-radius: 5px;
 `;

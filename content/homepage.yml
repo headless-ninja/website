@@ -1,3 +1,9 @@
+cta:
+  - to: /docs/drupal-quickstart
+    label: Get started with Drupal
+  - to: /docs/react-quickstart
+    label: Get started with React
+
 scroll_incentive: Curious? Scroll down to see how it works.
 
 short_explaination: Headless Ninja connects Drupal and React by providing a Drupal module and React components that talk to each other. This way you can use the robustness and architectural power of Drupal, while building beautiful, interactive front-ends. We take care of all the boring parts for you.
