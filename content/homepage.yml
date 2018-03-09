@@ -1,0 +1,41 @@
+scroll_incentive: Curious? Scroll down to see how it works.
+
+short_explaination: Headless Ninja connects Drupal and React by providing a Drupal module and React components that talk to each other. This way you can use the robustness and architectural power of Drupal, while building beautiful, interactive front-ends. We take care of all the boring parts for you.
+
+features:
+  title: Features
+  content:
+    - title: Works out of the box
+      link: /docs/drupal
+      description: Enable the Drupal module, and you’re ready to go! It uses Drupal standards to make sure it works with most installations. We provide a distribution if you want to kickstart a new installation.
+    - title: Performant
+      link: /docs/drupal/submodules
+      description: By limiting the amount of data sent from the server, the user can navigate to new pages truly fast. We track all content sent to users, so data is never sent twice.
+    - title: Configurable
+      link: /docs/drupal/submodules
+      description: The Drupal module also contains various sub-modules, that extend the default functionalities of Headless Ninja and allow you to customize the data sent to the front-end.
+    - title: Hackable
+      link: /docs/guides/altering-entities
+      description: By using the new widely-used Drupal 8 developer patterns like events and annotation plugins, you can painlessly add your custom code and take full control of your content.
+    - title: Compatible
+      link: /docs/guides/views
+      description: We use the default Entity API from Drupal, which means that all entities work without any modification needed. For some widely used modules, we added extra functionalities (like images and views).
+    - title: Non-exclusive
+      link: /docs/concepts/alternatives
+      description: While you probabily don’t need any other API when you enable this module, of course it’s still possible to user other API modules like JSON API and GraphQL.
+
+examples:
+  title: Showcase
+  introduction: "Headless Ninja is already rocking it on these websites:"
+  content:
+    - link: https://www.chupachups.co.uk/
+      title: Chupa Chups
+      screenshot: chupachups
+    - link: https://www.natuurmonumenten.nl/
+      title: Natuurmonumenten
+      screenshot: natuurmonumenten
+    - link: https://www.smint.co.uk/
+      title: Smint
+      screenshot: smint
+
+like_incentive: Do you like what you see? Give us a star on Github or Drupal.org!

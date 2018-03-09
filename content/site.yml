@@ -1,0 +1,16 @@
+# This file is used for general content and settings.
+
+# This data is used for the metatags and on the homepage.
+title: Headless Ninja
+description: Uniting the best of Drupal and React in a legendary easy way.
+
+# Open source project data
+projects:
+  drupal:
+    hn:
+      page: https://www.drupal.org/project/hn
+      nid: 2887044
+  github:
+    hn:
+      user: burst-digital
+      repo: hn
