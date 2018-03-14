@@ -13,15 +13,13 @@ const BodyContainer = styled.div`
 class AboutPage extends React.Component {
   render() {
     return (
-      <div className="index-container">
+      <main>
         <Helmet title={`About ${site.title}`} />
-        <main>
-          <MainHeader />
-          <BodyContainer>
-            {"This page isn't complete yet. Please check back in a few weeks!"}
-          </BodyContainer>
-        </main>
-      </div>
+        <MainHeader />
+        <BodyContainer>
+          {"This page isn't complete yet. Please check back in a few weeks!"}
+        </BodyContainer>
+      </main>
     );
   }
 }
