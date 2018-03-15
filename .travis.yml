@@ -17,11 +17,11 @@ deploy:
     branch: v1.8.47
   provider: pages
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: $GH_TOKEN
   keep-history: true
   local-dir: public
   fqdn: headless.ninja
-  email: bot@headless.ninja
+  email: github@headless.ninja
   name: Headless Ninja Bot
   on:
     branch: master
