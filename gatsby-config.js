@@ -7,9 +7,9 @@ module.exports = {
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: `gatsby-plugin-typography`,
       options: {
-        fonts: [`crimson text:400, 400i, 700, 700i`, `space mono:400,700`],
+        pathToConfigModule: `src/layouts/typography.js`,
       },
     },
     {
