@@ -1,8 +1,5 @@
 {
-  "name": "gatsby-docs-starter",
-  "description": "GatsbyJS starter designed with documentation and tutorial websites in mind.",
-  "version": "1.0.1",
-  "author": "Eric Windmill <eric@ericwindmill.com>",
+  "private": true,
   "dependencies": {
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.6.7",
@@ -41,11 +38,6 @@
     "stylelint-config-standard": "^18.2.0",
     "write-good": "^0.11.3"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
-  "main": "n/a",
   "scripts": {
     "start": "gatsby develop",
     "build": "gatsby build",
