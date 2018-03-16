@@ -44,7 +44,7 @@
     "build": "gatsby build",
     "serve-build": "gatsby serve",
     "test": "yarn lint:js && yarn lint:md",
-    "lint:js": "eslint --ext .js,.jsx --debug .",
+    "lint:js": "eslint --ext .js,.jsx .",
     "lint:md": "remark . -f",
     "format": "eslint . --ext .js,.jsx --fix && remark . -o",
     "write-good": "write-good content/**/*.md"
