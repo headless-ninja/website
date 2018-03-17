@@ -20,8 +20,6 @@ class TableOfContents extends React.Component {
         .posts.push({ slug, ...frontmatter });
     });
 
-    console.log(postsPerCategory);
-
     return (
       <TableOfContentsContainer>
         <ul>
