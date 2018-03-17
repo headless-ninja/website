@@ -25,7 +25,9 @@ class TableOfContents extends React.Component {
             <TOCInnerList>
               {posts.map(post => (
                 <li key={post.slug}>
-                  <Link to={post.slug}>{post.title}</Link>
+                  <Link to={post.slug} className={post.stub ? 'stub' : null}>
+                    {post.title}
+                  </Link>
                 </li>
               ))}
             </TOCInnerList>
@@ -61,6 +63,10 @@ const TOCInnerList = styled.ul`
     a {
       color: black;
       background-image: none;
+    }
+    a.stub {
+      color: grey;
+      font-style: italic;
     }
 
     a:hover {
