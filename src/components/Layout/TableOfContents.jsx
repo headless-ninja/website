@@ -3,9 +3,6 @@ import Link from 'gatsby-link';
 import styled from 'styled-components';
 import categories from '../../../content/docs/categories.yml';
 
-// This class should not be used for listing posts, but for chapter based Docs. See PostListing for that.
-// You'll also need to add your chapters to siteConfig
-
 class TableOfContents extends React.Component {
   render() {
     const postsPerCategory = categories.map(({ id, label }) => ({
@@ -21,71 +18,53 @@ class TableOfContents extends React.Component {
     });
 
     return (
-      <TableOfContentsContainer>
-        <ul>
-          {postsPerCategory.map(({ id, label, posts }) => (
-            <li className="chapter" key={id}>
-              <h5 className="tocHeading">{label}</h5>
-              <ul className="chapterItems">
-                {posts.map(post => (
-                  <LessonContainer>
-                    <Link to={post.slug}>
-                      <li>
-                        <span>
-                          <h6>{post.title}</h6>
-                        </span>
-                      </li>
-                    </Link>
-                  </LessonContainer>
-                ))}
-              </ul>
-            </li>
-          ))}
-        </ul>
-      </TableOfContentsContainer>
+      <TOCList>
+        {postsPerCategory.map(({ id, label, posts }) => (
+          <li key={id}>
+            {label && <Heading>{label}</Heading>}
+            <TOCInnerList>
+              {posts.map(post => (
+                <li key={post.slug}>
+                  <Link to={post.slug}>{post.title}</Link>
+                </li>
+              ))}
+            </TOCInnerList>
+          </li>
+        ))}
+      </TOCList>
     );
   }
 }
 
-const TableOfContentsContainer = styled.div`
+const TOCList = styled.ul`
   padding: ${props => props.theme.sitePadding};
 
-  & > ul,
-  .chapterItems {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-
-  p,
-  h6 {
-    display: inline-block;
-    font-weight: 200;
-    margin: 0;
-  }
-
-  .tocHeading {
-    font-weight: 200;
-    color: ${props => props.theme.brand};
-    margin-bottom: 10px;
-  }
+  list-style: none;
+  margin: 0;
 `;
 
-const LessonContainer = styled.div`
-  h6,
-  p {
-    color: black;
-    margin: 0;
-    line-height: 1.5;
-  }
+const Heading = styled.li`
+  color: ${props => props.theme.brand};
+  margin: 0;
+  font-size: 0.9rem;
+`;
+
+const TOCInnerList = styled.ul`
+  list-style: none;
+  line-height: 2;
+  font-size: 0.8rem;
+  margin: 0;
+
   li {
     margin: 0;
-  }
-  &:hover {
-    li {
-      span {
-        border-bottom: 1px solid black;
-      }
+
+    a {
+      color: black;
+      background-image: none;
+    }
+
+    a:hover {
+      border-bottom: 1px solid black;
     }
   }
 `;
