@@ -43,7 +43,7 @@ const TOCList = styled.ul`
   margin: 0;
 `;
 
-const Heading = styled.li`
+const Heading = styled.span`
   color: ${props => props.theme.brand};
   margin: 0;
   font-size: 0.9rem;
