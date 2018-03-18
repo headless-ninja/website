@@ -44,7 +44,7 @@ Replace all contents of `src/index.js` with
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import { waitForHnData, site } from 'hn-react';
 import App from './App';
 
@@ -53,9 +53,9 @@ import App from './App';
 
   ReactDOM.render(
     await waitForHnData(
-      <BrowserRouter>
+      <Router>
         <App />
-      </BrowserRouter>
+      </Router>
     ),
     document.getElementById('root'),
   );
@@ -76,7 +76,7 @@ import { withRouter } from 'react-router-dom';
 
 class App extends Component {
   render() {
-    const { location: { pathname, search }} = this.props;
+    const { location: { pathname, search } } = this.props;
 
     return (
       <DrupalPage
@@ -91,6 +91,8 @@ const Article = ({ entity }) => <h1>{entity.title}</h1>;
 
 export default withRouter(App);
 ```
+
+Now head back to your browser, and you should see the page title as you've entered it in your Drupal homepage.
 
 That's it! Follow the other guides for more detailed instructions and documentation:
 * [waitForHnData()](/docs/react/wait-for-hn-data)
