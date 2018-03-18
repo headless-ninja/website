@@ -36,9 +36,9 @@ We'll now do two things:
 2) Render the page title from Drupal
 
 Start by opening up `src/index.js`. In this file we'll
-* Initialize Headless Ninja with HN's `site.initialize()`
-* Wrap our App in react-router's `<BrowserRouter />`
-* Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
+- Initialize Headless Ninja with HN's `site.initialize()`
+- Wrap our App in react-router's `<BrowserRouter />`
+- Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
 
 Replace all contents of `src/index.js` with
 ```javascript
@@ -62,11 +62,11 @@ import App from './App';
 })();
 ```
 
-Please replace "http://drupal.dev" with [your Drupal url](/docs/drupal-quickstart).
+Please replace "<http://drupal.dev>" with [your Drupal url](/docs/drupal-quickstart).
 
 Now open up `src/App.js`. In this file we'll
-* Make sure HN updates whenever your visitor navigates
-* Map the Content Type we get from Drupal to a React component
+- Make sure HN updates whenever your visitor navigates
+- Map the Content Type we get from Drupal to a React component
 
 Replace all contents of `src/App.js` with
 ```javascript
@@ -95,7 +95,7 @@ export default withRouter(App);
 Now head back to your browser, and you should see the page title as you've entered it in your Drupal homepage.
 
 That's it! Follow the other guides for more detailed instructions and documentation:
-* [waitForHnData()](/docs/react/wait-for-hn-data)
-* [\<DrupalPage />](/docs/react/DrupalPage)
-* [Mapping Drupal to React components](/docs/react/mappers)
-* [Server Side Rendering](/docs/react-quickstart/server-side-rendering)
+- [waitForHnData()](/docs/react/wait-for-hn-data)
+- [\<DrupalPage />](/docs/react/DrupalPage)
+- [Mapping Drupal to React components](/docs/react/mappers)
+- [Server Side Rendering](/docs/react-quickstart/server-side-rendering)
