@@ -3,3 +3,9 @@
   label: 'Drupal quickstart'
 - id: react-quickstart
   label: 'React quickstart'
+- id: guides
+  label: 'Guides'
+- id: concepts
+  label: 'Concepts'
+- id: reference
+  label: 'Reference'

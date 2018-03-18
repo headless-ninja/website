@@ -95,7 +95,7 @@ export default withRouter(App);
 Now head back to your browser, and you should see the page title as you've entered it in your Drupal homepage.
 
 That's it! Follow the other guides for more detailed instructions and documentation:
-- [waitForHnData()](/docs/react/wait-for-hn-data)
-- [\<DrupalPage />](/docs/react/DrupalPage)
-- [Mapping Drupal to React components](/docs/react/mappers)
-- [Server Side Rendering](/docs/react-quickstart/server-side-rendering)
+- [waitForHnData()](/docs/reference/react#waitForHnData)
+- [\<DrupalPage />](/docs/reference/react#DrupalPage)
+- [Layouts with Paragraphs](/docs/guides/layouts-with-paragraphs)
+- [Server-side rendering](/docs/guides/server-side-rendering)
