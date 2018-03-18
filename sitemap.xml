@@ -7,6 +7,7 @@
 <url> <loc>http://headless.ninja/docs/drupal-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/react-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/react-quickstart/query-entities-and-references</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/docs/react-quickstart/server-side-rendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
