@@ -33,7 +33,8 @@ yarn add hn hn-react react-router-dom
 ```
 We'll now do two things:
 1) Connect React to the Drupal site
-2) Render the page title from Drupal
+2) Use React Router to watch for location changes
+3) Render the page title from Drupal
 
 Start by opening up `src/index.js`. In this file we'll
 - Initialize Headless Ninja with HN's `site.initialize()`
@@ -80,7 +81,10 @@ class App extends Component {
 
     return (
       <DrupalPage
-        mapper={{ node__content: Article }}
+        mapper={{
+          node__article: Article,
+          node__product: Product,
+        }}
         url={pathname + search}
       />
     );
@@ -88,6 +92,7 @@ class App extends Component {
 }
 
 const Article = ({ entity }) => <h1>{entity.title}</h1>;
+const Product = ({ entity }) => <h1>{entity.title}</h1>;
 
 export default withRouter(App);
 ```
