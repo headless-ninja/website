@@ -1,6 +1,7 @@
 ---
 title: Proxy Drupal with Node.js
 category: guides
+weight: 20
 ---
 
 In order to compress (gzip) all your requests, you can let all communications go through your front-end server.

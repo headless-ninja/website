@@ -2,6 +2,7 @@
 title: Altering entities
 category: guides
 stub: true
+weight: 70
 ---
 
 This is a stub. Help our community expand it.

@@ -2,6 +2,7 @@
 title: Server-side rendering
 category: guides
 stub: true
+weight: 10
 ---
 
 This is a stub. Help our community expand it.
