@@ -6,9 +6,7 @@ const img0 = animationData.assets.find(({ id }) => id === 'image_0');
 img0.p = gradient;
 img0.u = '';
 
-export default function AnimatedLogo() {
-  if (typeof window === 'undefined') return null;
-  const Lottie = require('react-lottie').default; // eslint-disable-line global-require
+export default function AnimatedLogoWrapper() {
   return (
     <div
       style={{
@@ -18,21 +16,28 @@ export default function AnimatedLogo() {
         overflow: 'hidden',
       }}
     >
-      <div
-        style={{
-          marginTop: '-160px',
+      {typeof window !== 'undefined' && <AnimatedLogo />}
+    </div>
+  );
+}
+
+function AnimatedLogo() {
+  const Lottie = require('react-lottie').default; // eslint-disable-line global-require
+  return (
+    <div
+      style={{
+        marginTop: '-160px',
+      }}
+    >
+      <Lottie
+        options={{
+          animationData,
+          rendererSettings: {
+            preserveAspectRatio: 'xMidYMid slice',
+          },
         }}
-      >
-        <Lottie
-          options={{
-            animationData,
-            rendererSettings: {
-              preserveAspectRatio: 'xMidYMid slice',
-            },
-          }}
-          isClickToPauseDisabled
-        />
-      </div>
+        isClickToPauseDisabled
+      />
     </div>
   );
 }
