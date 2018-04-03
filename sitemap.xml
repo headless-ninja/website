@@ -8,9 +8,9 @@
 <url> <loc>http://headless.ninja/docs/drupal-quickstart/alter-response</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/drupal-quickstart/enabling-submodules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/drupal-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/404-and-403</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/altering-entities</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/content-listings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/docs/guides/404-and-403</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/layouts-with-paragraphs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/proxy-drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/server-side-rendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
