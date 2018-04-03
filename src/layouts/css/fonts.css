@@ -1,0 +1,17 @@
+/**
+ * This file is included globally. Rules defined here extend the rules used
+ * by typescript.js, which is configured in typography.js.
+ */
+
+@font-face {
+    font-family: HeadlessNinjaMulticolore;
+    src: url('./fonts/HeadlessNinjaMulticolore.otf');
+}
+
+h1, h2 {
+    text-transform: uppercase;
+}
+
+.docsBody h2 {
+    text-transform: none;
+}
