@@ -6,7 +6,7 @@ import Link from 'gatsby-link';
 import site from '../../content/site.yml';
 import * as screenshots from '../../content/screenshots';
 import homepage from '../../content/homepage.yml';
-import logo from '../images/logo.png';
+import AnimatedLogo from '../components/AnimatedLogo';
 import Navigation from '../components/Layout/Navigation';
 import DrupalStarsCount from '../components/DrupalStarsCount';
 
@@ -18,8 +18,7 @@ class Index extends React.Component {
         <IndexHeadContainer>
           <Navigation />
           <Hero>
-            <img src={logo} width="150px" alt="" />
-            <h1>{site.title}</h1>
+            <AnimatedLogo />
             <h4>{site.description}</h4>
             <br />
             <br />
