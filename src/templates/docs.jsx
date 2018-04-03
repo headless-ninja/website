@@ -19,7 +19,7 @@ export default class LessonTemplate extends React.Component {
           <ToCContainer>
             <TableOfContents docs={this.props.data.allDocs.edges} />
           </ToCContainer>
-          <BodyContainer>
+          <BodyContainer className="docsBody">
             <div>
               <h1>{item.title}</h1>
               <div
