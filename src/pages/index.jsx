@@ -45,7 +45,9 @@ class Index extends React.Component {
           </Container>
 
           <Container>
-            <Heading>{homepage.short_explanation.heading}</Heading>
+            <Heading marginBottom={30}>
+              {homepage.short_explanation.heading}
+            </Heading>
             <ShortExplanationBody>
               {homepage.short_explanation.body}
             </ShortExplanationBody>
@@ -55,9 +57,7 @@ class Index extends React.Component {
           </Container>
 
           <Container background={getGradient(this.props.theme.gradientMild)}>
-            <Heading color="#fff" marginBottom={60}>
-              {homepage.features.title}
-            </Heading>
+            <Heading color="#fff">{homepage.features.title}</Heading>
 
             <FeatureList>
               {homepage.features.content.map(feature => (

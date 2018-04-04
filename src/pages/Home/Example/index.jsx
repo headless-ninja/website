@@ -1,14 +1,14 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
 import * as screenshots from '../../../../content/screenshots';
 
 // styled
+import Wrapper from './styled/Wrapper';
 import Label from './styled/Label';
 import Screenshot from './styled/Screenshot';
 
 const Example = ({ link, title, screenshot }) => (
-  <Link to={link} target="_blank">
+  <Wrapper to={link} target="_blank">
     <Screenshot
       style={{
         backgroundImage: `url(${screenshots[screenshot]})`,
@@ -16,7 +16,7 @@ const Example = ({ link, title, screenshot }) => (
       alt={`Screenshot of Headless Ninja HN in ${link}`}
     />
     <Label>{title}</Label>
-  </Link>
+  </Wrapper>
 );
 
 Example.propTypes = {
