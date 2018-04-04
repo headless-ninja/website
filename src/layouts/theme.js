@@ -23,6 +23,7 @@ const theme = {
 
   fonts: {
     hn: 'HeadlessNinjaMulticolore',
+    body: 'Roboto',
   },
 };
 

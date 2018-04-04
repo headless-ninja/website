@@ -12,6 +12,11 @@ theme.googleFonts = theme.googleFonts.filter(
 );
 theme.headerFontFamily[0] = 'HeadlessNinjaMulticolore';
 
+const roboto = theme.googleFonts.find(font => font.name === 'Roboto');
+roboto.styles.unshift('300');
+
+theme.bodyWeight = 300;
+
 const typography = new Typography(theme);
 
 export default typography;
