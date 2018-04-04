@@ -6,6 +6,9 @@ import './css/fonts.css';
 import theme from './theme';
 import site from '../../content/site.yml';
 
+// styled
+import ContentWrapper from './styled/ContentWrapper';
+
 export default class MainLayout extends React.Component {
   render() {
     const { children } = this.props;
@@ -14,7 +17,9 @@ export default class MainLayout extends React.Component {
         <Helmet>
           <meta name="description" content={site.description} />
         </Helmet>
-        <ThemeProvider theme={theme}>{children()}</ThemeProvider>
+        <ThemeProvider theme={theme}>
+          <ContentWrapper>{children()}</ContentWrapper>
+        </ThemeProvider>
       </div>
     );
   }

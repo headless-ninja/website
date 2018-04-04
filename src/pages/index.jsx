@@ -23,7 +23,7 @@ class Index extends React.Component {
           <Navigation />
           <Hero>
             <AnimatedLogo />
-            <h4>{site.description}</h4>
+            <TagLine color="#fff">{site.description}</TagLine>
             <br />
             <br />
             {homepage.cta.map(({ to, label }) => (
@@ -129,7 +129,7 @@ class Index extends React.Component {
 export default withTheme(Index);
 
 const IndexHeadContainer = styled.div`
-  background: ${props => props.theme.brand};
+  background: ${props => props.theme.backgroundGrey};
   padding: ${props => props.theme.sitePadding};
   text-align: center;
 `;
