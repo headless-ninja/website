@@ -21,6 +21,8 @@
 <url> <loc>http://headless.ninja/docs/reference/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/reference/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/Home/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/Home/Header/styled/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/styled/TagLine/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>

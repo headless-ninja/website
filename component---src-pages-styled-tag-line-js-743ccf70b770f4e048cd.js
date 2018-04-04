@@ -1,2 +1,0 @@
-webpackJsonp([0xecaac490b4e5],{81:function(n,e,o){"use strict";function t(n){return n&&n.__esModule?n:{default:n}}function u(n,e){return n.raw=e,n}e.__esModule=!0;var r=u(["\n  ",";\n"],["\n  ",";\n"]),c=o(5),a=t(c);e.default=a.default.h4(r,function(n){return n.color?"\n    color: "+n.color+";\n  ":""}),n.exports=e.default}});
-//# sourceMappingURL=component---src-pages-styled-tag-line-js-743ccf70b770f4e048cd.js.map
