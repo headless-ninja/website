@@ -18,7 +18,9 @@ const ButtonComponent = ({
   return (
     <Container>
       <CTA to={to} bgColor={bgColor} secondary={secondary}>
-        <CTAInner textColor={textColor} secondary={secondary}>{children}</CTAInner>
+        <CTAInner textColor={textColor} secondary={secondary}>
+          {children}
+        </CTAInner>
       </CTA>
     </Container>
   );

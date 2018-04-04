@@ -8,10 +8,7 @@ import Label from './styled/Label';
 import Screenshot from './styled/Screenshot';
 
 const Example = ({ link, title, screenshot }) => (
-  <Link
-    to={link}
-    target="_blank"
-  >
+  <Link to={link} target="_blank">
     <Screenshot
       style={{
         backgroundImage: `url(${screenshots[screenshot]})`,

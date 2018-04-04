@@ -5,7 +5,7 @@
 [![dependencies status](https://img.shields.io/david/headless-ninja/website.svg?style=flat-square)](https://david-dm.org/headless-ninja/website)
 [![devdependencies Status](https://img.shields.io/david/dev/headless-ninja/website.svg?style=flat-square)](https://david-dm.org/headless-ninja/website?type=dev)
 
-This is the source code of [http://headless.ninja](http://headless.ninja).
+This is the source code of <http://headless.ninja>.
 
 ## Contributing
 
