@@ -46,7 +46,7 @@ const TOCList = styled.ul`
 `;
 
 const Heading = styled.span`
-  color: ${props => props.theme.brand};
+  color: ${props => props.theme.brand.pink};
   margin: 0;
   font-size: 0.9rem;
 `;

@@ -2,3 +2,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+a {
+    text-shadow: none;
+    background-image: none;
+}

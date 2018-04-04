@@ -6,7 +6,7 @@ class MainHeader extends React.Component {
   render() {
     return (
       <SiteContainer>
-        <Navigation />
+        <Navigation showLogo />
       </SiteContainer>
     );
   }
