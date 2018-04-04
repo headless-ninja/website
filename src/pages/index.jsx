@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import styled, { withTheme } from 'styled-components';
 import Link from 'gatsby-link';
@@ -7,7 +7,7 @@ import site from '../../content/site.yml';
 import * as screenshots from '../../content/screenshots';
 import homepage from '../../content/homepage.yml';
 import AnimatedLogo from '../components/AnimatedLogo';
-import Navigation from '../components/Layout/Navigation';
+import Header from './Home/Header';
 import DrupalStarsCount from '../components/DrupalStarsCount';
 import Button from '../components/Button';
 
@@ -17,26 +17,25 @@ import TagLine from './styled/TagLine';
 class Index extends React.Component {
   render() {
     return (
-      <main>
-        <Helmet title="Headless Ninja" />
-        <IndexHeadContainer>
-          <Navigation />
-          <Hero>
-            <AnimatedLogo />
-            <TagLine color="#fff">{site.description}</TagLine>
-            <br />
-            <br />
-            {homepage.cta.map(({ to, label }) => (
-              <Button
-                to={to}
-                bgColor={this.props.theme.backgroundGrey}
-                textColor="#fff"
-              >
-                {label}
-              </Button>
-            ))}
-          </Hero>
-        </IndexHeadContainer>
+      <Fragment>
+        <Helmet title={`Headless Ninja - ${site.description}`} />
+        <Header />
+        <main>
+          <IndexHeadContainer>
+            <Hero>
+              <AnimatedLogo />
+              <TagLine color="#fff">{site.description}</TagLine>
+              {homepage.cta.map(({ to, label }) => (
+                <Button
+                  to={to}
+                  bgColor={this.props.theme.backgroundGrey}
+                  textColor="#fff"
+                >
+                  {label}
+                </Button>
+              ))}
+            </Hero>
+          </IndexHeadContainer>
 
         <div style={{ width: '90%', maxWidth: 900, margin: '0 auto' }}>
           <br />
