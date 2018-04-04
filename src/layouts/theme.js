@@ -1,6 +1,10 @@
 const theme = {
   // named colors:
-  brand: '#41B883',
+  brand: {
+    orange: '#feac00',
+    pink: '#f22381',
+    purple: '#a44c9f',
+  },
   accent: '#ADD2EB',
   accentDark: '#35495E',
   lightGrey: '#F6F6F6',
@@ -13,21 +17,6 @@ const theme = {
 
   textColor: '#434343',
 
-  gradient: {
-    angle: 45,
-    colors: [
-      {
-        color: 'rgba(254,172,0,1)',
-      },
-      {
-        color: 'rgba(242,35,129,1)',
-      },
-      {
-        color: 'rgba(164,76,159,1)',
-      },
-    ],
-  },
-
   // content width:
   contentWidthLaptop: '850px',
   sitePadding: '25px',
@@ -35,6 +24,21 @@ const theme = {
   fonts: {
     hn: 'HeadlessNinjaMulticolore',
   },
+};
+
+theme.gradient = {
+  angle: 45,
+  colors: [
+    {
+      color: theme.brand.orange,
+    },
+    {
+      color: theme.brand.pink,
+    },
+    {
+      color: theme.brand.purple,
+    },
+  ],
 };
 
 export default theme;
