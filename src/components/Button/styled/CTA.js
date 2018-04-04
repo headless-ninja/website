@@ -1,5 +1,6 @@
 import Link from 'gatsby-link';
 import styled from 'styled-components';
+import { getGradient } from '../../../layouts/theme';
 
 export default styled(Link)`
   position: relative;
@@ -18,18 +19,7 @@ export default styled(Link)`
 
   &::after {
     content: '';
-    background-image: linear-gradient(
-      ${p => p.theme.gradient.angle}deg,
-      ${p =>
-        p.theme.gradient.colors
-          .map(
-            (color, i) =>
-              `${color.color} ${Math.round(
-                i / (p.theme.gradient.colors.length - 1) * 100,
-              )}%`,
-          )
-          .join(',')}
-    );
+    background-image: ${p => getGradient(p.theme.gradient)};
     position: absolute;
     top: -1px;
     left: -1px;

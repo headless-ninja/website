@@ -41,4 +41,18 @@ theme.gradient = {
   ],
 };
 
+export const getGradient = gradient => `
+  linear-gradient(
+    ${gradient.angle}deg,
+    ${gradient.colors
+      .map(
+        (color, i) =>
+          `${color.color} ${Math.round(
+            i / (gradient.colors.length - 1) * 100,
+          )}%`,
+      )
+      .join(',')}
+  )
+`;
+
 export default theme;
