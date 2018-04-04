@@ -45,6 +45,9 @@ class Index extends React.Component {
             <ShortExplanationBody>
               {homepage.short_explanation.body}
             </ShortExplanationBody>
+            <Button to={homepage.short_explanation.cta.to} bgColor="#fff">
+              {homepage.short_explanation.cta.label}
+            </Button>
           </Container>
 
           <Container highlight>

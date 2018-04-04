@@ -4,7 +4,10 @@ cta:
 
 short_explanation:
   heading: Summary
-  body: Headless Ninja lets your Drupal and React communicate. Create components for your Drupal entities and have all their data & your Drupal configuration available automagically. You can focus on building beautiful, interactive front-ends. We take care of the boring stuff.
+  body: Headless Ninja is the missing piece in connecting your Drupal and React. Create components for your Drupal entities and have all their data & your Drupal configuration available automagically. You can focus on building beautiful, interactive front-ends. We take care of the boring stuff.
+  cta:
+    to: /docs
+    label: Go to docs
 
 features:
   title: Features
