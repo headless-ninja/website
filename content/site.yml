@@ -2,7 +2,7 @@
 
 # This data is used for the metatags and on the homepage.
 title: Headless Ninja
-description: Uniting the best of Drupal and React in a legendary easy way.
+description: Magically uniting the best of Drupal and React. We take care of the boring stuff.
 
 # Open source project data
 projects:
@@ -12,5 +12,5 @@ projects:
       nid: 2887044
   github:
     hn:
-      user: burst-digital
-      repo: hn
+      user: headless-ninja
+      repo: javascript
