@@ -10,6 +10,7 @@ import AnimatedLogo from '../components/AnimatedLogo';
 import Header from './Home/Header';
 import DrupalStarsCount from '../components/DrupalStarsCount';
 import Button from '../components/Button';
+import Title from './Home/Title';
 
 // styled
 import Container from './Home/Container';
@@ -29,6 +30,7 @@ class Index extends React.Component {
         <Header />
         <main>
           <Container background={this.props.theme.backgroundGrey}>
+            <Title title={site.title} />
             <AnimatedLogo />
             <TagLine color="#fff">{site.description}</TagLine>
             {homepage.cta.map(({ to, label }) => (
