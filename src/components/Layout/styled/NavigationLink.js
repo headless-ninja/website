@@ -17,7 +17,7 @@ export default styled(Link)`
 
   &::after {
     content: '';
-    background-image: ${p => getGradient(p.theme.gradient)};
+    background-image: ${p => getGradient(p.theme.gradientMild)};
     position: absolute;
     bottom: 0;
     left: 0;
