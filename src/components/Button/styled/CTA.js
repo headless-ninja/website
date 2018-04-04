@@ -5,7 +5,7 @@ import { getGradient } from '../../../layouts/theme';
 export default styled(Link)`
   position: relative;
   margin: 10px;
-  padding: 15px 0;
+  padding: 12px 0;
   display: inline-block;
 
   background-color: ${p => p.bgColor};
