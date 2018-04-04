@@ -4,9 +4,10 @@ import { getGradient } from '../../../layouts/theme';
 
 export default styled(Link)`
   position: relative;
-  margin: 10px;
+  margin: 50px 10px 0;
   padding: 12px 0;
   display: inline-block;
+  text-align: center;
 
   background-color: ${p => p.bgColor};
   border-radius: 100px;

@@ -4,19 +4,19 @@ import PropTypes from 'prop-types';
 import StyledContainer from './styled/Container';
 import ContainerInner from './styled/ContainerInner';
 
-const Index = ({ highlight, children }) => (
-  <StyledContainer highlight={highlight}>
+const Index = ({ children, background }) => (
+  <StyledContainer background={background}>
     <ContainerInner>{children}</ContainerInner>
   </StyledContainer>
 );
 
 Index.propTypes = {
-  highlight: PropTypes.bool,
   children: PropTypes.node.isRequired,
+  background: PropTypes.string,
 };
 
 Index.defaultProps = {
-  highlight: false,
+  background: '#fff',
 };
 
 export default Index;

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
-import styled, { withTheme } from 'styled-components';
+import { withTheme } from 'styled-components';
 import Link from 'gatsby-link';
 
 import site from '../../content/site.yml';
@@ -16,6 +16,7 @@ import Container from './Home/Container';
 import TagLine from './Home/styled/TagLine';
 import Heading from '../components/Layout/Typography/Heading';
 import ShortExplanationBody from './Home/styled/ShortExplanationBody';
+import { getGradient } from '../layouts/theme';
 
 class Index extends React.Component {
   render() {
@@ -24,21 +25,19 @@ class Index extends React.Component {
         <Helmet title={`Headless Ninja - ${site.description}`} />
         <Header />
         <main>
-          <IndexHeadContainer>
-            <Hero>
-              <AnimatedLogo />
-              <TagLine color="#fff">{site.description}</TagLine>
-              {homepage.cta.map(({ to, label }) => (
-                <Button
-                  to={to}
-                  bgColor={this.props.theme.backgroundGrey}
-                  textColor="#fff"
-                >
-                  {label}
-                </Button>
-              ))}
-            </Hero>
-          </IndexHeadContainer>
+          <Container background={this.props.theme.backgroundGrey}>
+            <AnimatedLogo />
+            <TagLine color="#fff">{site.description}</TagLine>
+            {homepage.cta.map(({ to, label }) => (
+              <Button
+                to={to}
+                bgColor={this.props.theme.backgroundGrey}
+                textColor="#fff"
+              >
+                {label}
+              </Button>
+            ))}
+          </Container>
 
           <Container>
             <Heading>{homepage.short_explanation.heading}</Heading>
@@ -50,7 +49,7 @@ class Index extends React.Component {
             </Button>
           </Container>
 
-          <Container highlight>
+          <Container background={getGradient(this.props.theme.gradientMild)}>
             <Heading color="#fff">{homepage.features.title}</Heading>
 
             {homepage.features.content.map(({ title, link, description }) => (
@@ -115,16 +114,3 @@ class Index extends React.Component {
 }
 
 export default withTheme(Index);
-
-const IndexHeadContainer = styled.div`
-  background: ${props => props.theme.backgroundGrey};
-  padding: ${props => props.theme.sitePadding};
-  text-align: center;
-`;
-
-const Hero = styled.div`
-  padding: 50px 0;
-  & > h1 {
-    font-weight: 600;
-  }
-`;
