@@ -4,7 +4,6 @@ import { withTheme } from 'styled-components';
 import Link from 'gatsby-link';
 
 import site from '../../content/site.yml';
-import * as screenshots from '../../content/screenshots';
 import homepage from '../../content/homepage.yml';
 import AnimatedLogo from '../components/AnimatedLogo';
 import Header from './Home/Header';
@@ -18,9 +17,10 @@ import TagLine from './Home/styled/TagLine';
 import Heading from '../components/Layout/Typography/Heading';
 import ShortExplanationBody from './Home/styled/ShortExplanationBody';
 import { getGradient } from '../layouts/theme';
-import Example from './Home/Example';
 import FeatureList from './Home/Feature/styled/List';
 import Feature from './Home/Feature';
+import ExampleList from './Home/Example/styled/List';
+import Example from './Home/Example';
 
 class Index extends React.Component {
   render() {
@@ -70,27 +70,13 @@ class Index extends React.Component {
           </Container>
 
           <Container>
-            <h2>{homepage.examples.title}</h2>
+            <Heading>{homepage.examples.title}</Heading>
 
-            <p>{homepage.examples.introduction}</p>
-            {homepage.examples.content.map(({ link, title, screenshot }) => (
-              <Link
-                to={link}
-                style={{
-                  display: 'inline-block',
-                  width: '30%',
-                  margin: '0 1%',
-                }}
-                target="_blank"
-              >
-                <h3>{title}</h3>
-                <img
-                  src={screenshots[screenshot]}
-                  width="100%"
-                  alt={`Screenshot of ${link}`}
-                />
-              </Link>
-            ))}
+            <ExampleList>
+              {homepage.examples.content.map(example => (
+                <Example key={example.screenshot} {...example} />
+              ))}
+            </ExampleList>
           </Container>
 
           <Container>

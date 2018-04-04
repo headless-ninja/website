@@ -39,13 +39,13 @@ examples:
   introduction: "Headless Ninja is already rocking it on these websites:"
   content:
     - link: https://www.chupachups.co.uk/
-      title: Chupa Chups
+      title: chupachups.co.uk
       screenshot: chupachups
     - link: https://www.natuurmonumenten.nl/
-      title: Natuurmonumenten
+      title: natuurmonumenten.nl
       screenshot: natuurmonumenten
     - link: https://www.smint.co.uk/
-      title: Smint
+      title: smint.co.uk
       screenshot: smint
 
 like_incentive: Do you like what you see? Give us a star on Github or Drupal.org!
