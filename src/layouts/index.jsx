@@ -22,7 +22,10 @@ export default class MainLayout extends React.Component {
             property="og:description"
             content={site.description}
           />
-          <meta property="og:image" content={socialsImage} />
+          <meta
+            property="og:image"
+            content={`http://headless.ninja${socialsImage}`}
+          />
           <meta property="twitter:card" content="summary_large_image" />
         </Helmet>
         <ThemeProvider theme={theme}>
