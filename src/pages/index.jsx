@@ -37,88 +37,67 @@ class Index extends React.Component {
             </Hero>
           </IndexHeadContainer>
 
-        <div style={{ width: '90%', maxWidth: 900, margin: '0 auto' }}>
-          <br />
-          <hr />
-          <br />
+          <div style={{ width: '90%', maxWidth: 900, margin: '0 auto' }}>
+            <p>{homepage.short_explaination}</p>
+            <div style={{ textAlign: 'center' }}>
+              <h2>{homepage.features.title}</h2>
 
-          <p>{homepage.short_explaination}</p>
+              {homepage.features.content.map(({ title, link, description }) => (
+                <Link
+                  to={link}
+                  style={{
+                    display: 'inline-block',
+                    width: '30%',
+                    margin: '0 1%',
+                  }}
+                >
+                  <h3>{title}</h3>
+                  <p>{description}</p>
+                </Link>
+              ))}
 
-          {Array(5)
-            .fill()
-            .map(() => <br />)}
+              <h2>{homepage.examples.title}</h2>
 
-          <div style={{ textAlign: 'center' }}>
-            <h2>{homepage.features.title}</h2>
+              <p>{homepage.examples.introduction}</p>
+              {homepage.examples.content.map(({ link, title, screenshot }) => (
+                <Link
+                  to={link}
+                  style={{
+                    display: 'inline-block',
+                    width: '30%',
+                    margin: '0 1%',
+                  }}
+                  target="_blank"
+                >
+                  <h3>{title}</h3>
+                  <img
+                    src={screenshots[screenshot]}
+                    width="100%"
+                    alt={`Screenshot of ${link}`}
+                  />
+                </Link>
+              ))}
+            </div>
 
-            {homepage.features.content.map(({ title, link, description }) => (
-              <Link
-                to={link}
-                style={{
-                  display: 'inline-block',
-                  width: '30%',
-                  margin: '0 1%',
-                }}
-              >
-                <h3>{title}</h3>
-                <p>{description}</p>
+            <div style={{ textAlign: 'center' }}>
+              <h4>{homepage.like_incentive}</h4>
+              <iframe
+                title="Github stars"
+                src={`https://ghbtns.com/github-btn.html?user=${
+                  site.projects.github.hn.user
+                }&repo=${site.projects.github.hn.repo}&type=star&count=true`}
+                frameBorder="0"
+                scrolling="0"
+                width="80px"
+                height="20px"
+              />
+              <Link to="https://www.drupal.org/project/hn" target="_blank">
+                <DrupalStarsCount />
               </Link>
-            ))}
-
-            {Array(5)
-              .fill()
-              .map(() => <br />)}
-
-            <h2>{homepage.examples.title}</h2>
-
-            <p>{homepage.examples.introduction}</p>
-            {homepage.examples.content.map(({ link, title, screenshot }) => (
-              <Link
-                to={link}
-                style={{
-                  display: 'inline-block',
-                  width: '30%',
-                  margin: '0 1%',
-                }}
-                target="_blank"
-              >
-                <h3>{title}</h3>
-                <img
-                  src={screenshots[screenshot]}
-                  width="100%"
-                  alt={`Screenshot of ${link}`}
-                />
-              </Link>
-            ))}
+            </div>
           </div>
-
-          {Array(20)
-            .fill()
-            .map(() => <br />)}
-
-          <div style={{ textAlign: 'center' }}>
-            <h4>{homepage.like_incentive}</h4>
-
-            <iframe
-              title="Github stars"
-              src={`https://ghbtns.com/github-btn.html?user=${
-                site.projects.github.hn.user
-              }&repo=${site.projects.github.hn.repo}&type=star&count=true`}
-              frameBorder="0"
-              scrolling="0"
-              width="80px"
-              height="20px"
-            />
-            <Link to="https://www.drupal.org/project/hn" target="_blank">
-              <DrupalStarsCount />
-            </Link>
-          </div>
-        </div>
-
-        {Array(20)
-          .fill()
-          .map(() => <br />)}
-      </main>
+        </main>
+      </Fragment>
     );
   }
 }
