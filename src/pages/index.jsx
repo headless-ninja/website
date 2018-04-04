@@ -1,6 +1,6 @@
 import React from 'react';
 import Helmet from 'react-helmet';
-import styled from 'styled-components';
+import styled, { withTheme } from 'styled-components';
 import Link from 'gatsby-link';
 
 import site from '../../content/site.yml';
@@ -9,6 +9,10 @@ import homepage from '../../content/homepage.yml';
 import AnimatedLogo from '../components/AnimatedLogo';
 import Navigation from '../components/Layout/Navigation';
 import DrupalStarsCount from '../components/DrupalStarsCount';
+import Button from '../components/Button';
+
+// styled
+import TagLine from './styled/TagLine';
 
 class Index extends React.Component {
   render() {
@@ -22,7 +26,15 @@ class Index extends React.Component {
             <h4>{site.description}</h4>
             <br />
             <br />
-            {homepage.cta.map(({ to, label }) => <CTA to={to}>{label}</CTA>)}
+            {homepage.cta.map(({ to, label }) => (
+              <Button
+                to={to}
+                bgColor={this.props.theme.backgroundGrey}
+                textColor="#fff"
+              >
+                {label}
+              </Button>
+            ))}
           </Hero>
         </IndexHeadContainer>
 
@@ -114,7 +126,7 @@ class Index extends React.Component {
   }
 }
 
-export default Index;
+export default withTheme(Index);
 
 const IndexHeadContainer = styled.div`
   background: ${props => props.theme.brand};
@@ -127,12 +139,4 @@ const Hero = styled.div`
   & > h1 {
     font-weight: 600;
   }
-`;
-
-const CTA = styled(Link)`
-  margin: 10px;
-  padding: 20px;
-  background: white;
-  color: ${props => props.theme.brand};
-  border-radius: 5px;
 `;
