@@ -9,30 +9,21 @@ export default styled(Link)`
   display: inline-block;
   text-align: center;
 
-  background-color: ${p => p.bgColor};
-  border-radius: 100px;
-
   &:hover {
     &::before {
       opacity: 0.85;
+      ${p =>
+        p.secondary
+          ? `
+        background-color: rgba(255, 255, 255, 0.3);
+      `
+          : ''};
     }
-  }
-
-  &::after {
-    content: '';
-    background-image: ${p => getGradient(p.theme.gradient)};
-    position: absolute;
-    top: -1px;
-    left: -1px;
-    width: calc(100% + 2px);
-    height: calc(100% + 2px);
-    border-radius: 100px;
-    z-index: 0;
   }
 
   &::before {
     content: '';
-    background-color: ${p => p.bgColor};
+    background-color: ${p => (p.secondary ? 'transparent' : p.bgColor)};
     position: absolute;
     top: 0;
     left: 0;
@@ -40,8 +31,22 @@ export default styled(Link)`
     height: 100%;
     border-radius: 100px;
     z-index: 1;
-    transition: opacity 0.4s;
+    transition: all 0.4s;
     backface-visibility: hidden;
     opacity: 1;
+    border: ${p => (p.secondary ? '2px solid #fff' : 'none')};
+  }
+
+  &::after {
+    content: '';
+    background: ${p =>
+      p.secondary ? 'transparent' : getGradient(p.theme.gradient)};
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    border-radius: 100px;
+    z-index: 0;
   }
 `;

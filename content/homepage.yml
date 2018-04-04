@@ -30,6 +30,9 @@ features:
     - title: Non-exclusive
       link: /docs/concepts/alternatives
       description: While you probabily don’t need any other API when you enable this module, of course it’s still possible to user other API modules like JSON API and GraphQL.
+  cta:
+    to: /docs
+    label: Go to docs
 
 examples:
   title: Showcase

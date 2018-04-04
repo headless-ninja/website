@@ -17,6 +17,9 @@ import TagLine from './Home/styled/TagLine';
 import Heading from '../components/Layout/Typography/Heading';
 import ShortExplanationBody from './Home/styled/ShortExplanationBody';
 import { getGradient } from '../layouts/theme';
+import Example from './Home/Example';
+import FeatureList from './Home/Feature/styled/List';
+import Feature from './Home/Feature';
 
 class Index extends React.Component {
   render() {
@@ -50,21 +53,18 @@ class Index extends React.Component {
           </Container>
 
           <Container background={getGradient(this.props.theme.gradientMild)}>
-            <Heading color="#fff">{homepage.features.title}</Heading>
+            <Heading color="#fff" marginBottom={60}>
+              {homepage.features.title}
+            </Heading>
 
-            {homepage.features.content.map(({ title, link, description }) => (
-              <Link
-                to={link}
-                style={{
-                  display: 'inline-block',
-                  width: '30%',
-                  margin: '0 1%',
-                }}
-              >
-                <h3>{title}</h3>
-                <p>{description}</p>
-              </Link>
-            ))}
+            <FeatureList>
+              {homepage.features.content.map(feature => (
+                <Feature key={feature.title} {...feature} />
+              ))}
+            </FeatureList>
+            <Button to={homepage.features.cta.to} secondary>
+              {homepage.features.cta.label}
+            </Button>
           </Container>
 
           <Container>
