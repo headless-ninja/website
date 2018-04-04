@@ -15,11 +15,11 @@
 <url> <loc>http://headless.ninja/docs/guides/proxy-drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/server-side-rendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/guides/views</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/react-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/react-quickstart/query-entities-and-references</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/reference/drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/reference/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/reference/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/docs/react-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>http://headless.ninja/docs/react-quickstart/query-entities-and-references</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/Home/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/Home/Header/styled/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
