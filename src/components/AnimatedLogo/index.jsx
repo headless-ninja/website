@@ -25,6 +25,11 @@ export default function AnimatedLogo() {
             preserveAspectRatio: 'xMidYMid slice',
           },
         }}
+        ref={c => {
+          if (c && c.el) {
+            c.el.removeAttribute('tabindex');
+          }
+        }}
         isClickToPauseDisabled
       />
     </div>
