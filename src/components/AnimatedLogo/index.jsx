@@ -13,7 +13,7 @@ export default function AnimatedLogo() {
   return (
     <div
       style={{
-        maxWidth: 450,
+        maxWidth: 800,
         margin: '0 auto',
       }}
     >
