@@ -1,8 +1,6 @@
 cta:
   - to: /docs/drupal-quickstart
-    label: Get started with Drupal
-  - to: /docs/react-quickstart
-    label: Get started with React
+    label: Get started
 
 scroll_incentive: Curious? Scroll down to see how it works.
 
