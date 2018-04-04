@@ -6,6 +6,7 @@ import './css/fonts.css';
 import './css/base.css';
 import theme from './theme';
 import site from '../../content/site.yml';
+import socialsImage from '../images/socials.png';
 
 // styled
 import ContentWrapper from './styled/ContentWrapper';
@@ -16,7 +17,13 @@ export default class MainLayout extends React.Component {
     return (
       <div>
         <Helmet>
-          <meta name="description" content={site.description} />
+          <meta
+            name="description"
+            property="og:description"
+            content={site.description}
+          />
+          <meta property="og:image" content={socialsImage} />
+          <meta property="twitter:card" content="summary_large_image" />
         </Helmet>
         <ThemeProvider theme={theme}>
           <ContentWrapper>{children()}</ContentWrapper>
