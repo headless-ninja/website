@@ -6,31 +6,20 @@ const img0 = animationData.assets.find(({ id }) => id === 'image_0');
 img0.p = gradient;
 img0.u = '';
 
-export default function AnimatedLogoWrapper() {
-  return (
-    <div
-      style={{
-        maxWidth: 800,
-        height: '100px',
-        margin: '0 auto',
-        overflow: 'hidden',
-      }}
-    >
-      {typeof window !== 'undefined' && <AnimatedLogo />}
-    </div>
-  );
-}
+export default function AnimatedLogo() {
+  if (typeof window === 'undefined') return null;
 
-function AnimatedLogo() {
   const Lottie = require('react-lottie').default; // eslint-disable-line global-require
   return (
     <div
       style={{
-        marginTop: '-160px',
+        maxWidth: 450,
+        margin: '0 auto',
       }}
     >
       <Lottie
         options={{
+          loop: false,
           animationData,
           rendererSettings: {
             preserveAspectRatio: 'xMidYMid slice',
