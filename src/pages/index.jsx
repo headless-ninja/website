@@ -39,8 +39,6 @@ class Index extends React.Component {
         </IndexHeadContainer>
 
         <div style={{ width: '90%', maxWidth: 900, margin: '0 auto' }}>
-          <p>{homepage.scroll_incentive}</p>
-
           <br />
           <hr />
           <br />
