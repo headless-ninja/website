@@ -1,16 +1,12 @@
 import styled from 'styled-components';
 
-export default styled.h4`
+export default styled.span`
+  display: block;
   width: 518px;
-  margin: 60px auto;
+  margin: 30px auto;
   font-size: 22px;
   line-height: 30px;
   font-family: ${p => p.theme.fonts.hn};
   font-weight: normal;
-  ${p =>
-    p.color
-      ? `
-    color: ${p.color};
-  `
-      : ''};
+  color: ${p => p.color || p.theme.brand.pink};
 `;

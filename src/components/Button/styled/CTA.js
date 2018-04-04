@@ -5,6 +5,7 @@ export default styled(Link)`
   position: relative;
   margin: 10px;
   padding: 15px 0;
+  display: inline-block;
 
   background-color: ${p => p.bgColor};
   border-radius: 100px;
