@@ -5,5 +5,6 @@ export default styled.section`
 
   a {
     text-shadow: none;
+    color: ${p => p.theme.textColor};
   }
 `;
