@@ -5,7 +5,7 @@ export default styled(Link)`
   color: #fff;
   background-image: none;
   text-shadow: none;
-  padding: 0 10px;
+  padding: 0 5px 5px;
   margin: 0 10px;
   text-transform: uppercase;
   font-family: ${p => p.theme.fonts.hn};
