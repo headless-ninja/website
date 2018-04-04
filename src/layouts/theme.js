@@ -41,6 +41,18 @@ theme.gradient = {
   ],
 };
 
+theme.gradientMild = {
+  angle: 35,
+  colors: [
+    {
+      color: theme.brand.pink,
+    },
+    {
+      color: theme.brand.purple,
+    },
+  ],
+};
+
 export const getGradient = gradient => `
   linear-gradient(
     ${gradient.angle}deg,

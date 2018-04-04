@@ -12,7 +12,10 @@ import DrupalStarsCount from '../components/DrupalStarsCount';
 import Button from '../components/Button';
 
 // styled
-import TagLine from './styled/TagLine';
+import Container from './Home/Container';
+import TagLine from './Home/styled/TagLine';
+import Heading from '../components/Layout/Typography/Heading';
+import ShortExplanationBody from './Home/styled/ShortExplanationBody';
 
 class Index extends React.Component {
   render() {
