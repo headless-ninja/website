@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.h4`
-  width: 518px;
+  max-width: 518px;
   margin: 0 auto ${p => p.marginBottom || 60}px;
   font-size: 28px;
   line-height: 30px;
