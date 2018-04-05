@@ -28,9 +28,11 @@ export default styled(Link)`
     opacity: 0.6;
   }
 
-  &:hover {
-    &::after {
-      width: 100%;
+  @media (hover) {
+    &:hover {
+      &::after {
+        width: 100%;
+      }
     }
   }
 `;

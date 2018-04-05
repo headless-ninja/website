@@ -69,8 +69,10 @@ const TOCInnerList = styled.ul`
       font-style: italic;
     }
 
-    a:hover {
-      border-bottom: 1px solid black;
+    @media (hover) {
+      a:hover {
+        border-bottom: 1px solid black;
+      }
     }
   }
 `;

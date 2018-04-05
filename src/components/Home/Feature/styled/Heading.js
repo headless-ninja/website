@@ -41,9 +41,11 @@ export default styled.h3`
     opacity: 0.7;
   }
 
-  &:hover {
-    &::after {
-      width: 100%;
+  @media (hover) {
+    &:hover {
+      &::after {
+        width: 100%;
+      }
     }
   }
 `;

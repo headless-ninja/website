@@ -7,14 +7,16 @@ import Label from './Label';
 export default styled.a`
   overflow: hidden;
 
-  &:hover {
-    ${Screenshot} {
-      transform: scale(1.03);
-    }
+  @media (hover) {
+    &:hover {
+      ${Screenshot} {
+        transform: scale(1.03);
+      }
 
-    ${Label} {
-      &::after {
-        width: 100%;
+      ${Label} {
+        &::after {
+          width: 100%;
+        }
       }
     }
   }
