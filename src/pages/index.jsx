@@ -6,24 +6,24 @@ import Link from 'gatsby-link';
 import site from '../../content/site.yml';
 import homepage from '../../content/homepage.yml';
 import AnimatedLogo from '../components/AnimatedLogo';
-import Header from './Home/Header';
+import Header from '../components/Home/Header';
 import DrupalStarsCount from '../components/DrupalStarsCount';
 import Button from '../components/Button';
-import Title from './Home/Title';
+import Title from '../components/Home/Title';
 import LogoSrc from '../images/logo_break.svg';
 
 // styled
-import Container from './Home/Container';
-import TagLine from './Home/styled/TagLine';
+import Container from '../components/Home/Container';
+import TagLine from '../components/Home/styled/TagLine';
 import Heading from '../components/Layout/Typography/Heading';
-import ShortExplanationBody from './Home/styled/ShortExplanationBody';
+import ShortExplanationBody from '../components/Home/styled/ShortExplanationBody';
 import { getGradient } from '../layouts/theme';
-import FeatureList from './Home/Feature/styled/List';
-import Feature from './Home/Feature';
-import ExampleList from './Home/Example/styled/List';
-import Example from './Home/Example';
+import FeatureList from '../components/Home/Feature/styled/List';
+import Feature from '../components/Home/Feature';
+import ExampleList from '../components/Home/Example/styled/List';
+import Example from '../components/Home/Example';
 import Divider from '../components/Layout/styled/Divider';
-import LikeIncentive from './Home/styled/LikeIncentive';
+import LikeIncentive from '../components/Home/styled/LikeIncentive';
 
 class Index extends React.Component {
   render() {
