@@ -10,6 +10,7 @@ import Header from './Home/Header';
 import DrupalStarsCount from '../components/DrupalStarsCount';
 import Button from '../components/Button';
 import Title from './Home/Title';
+import LogoSrc from '../images/logo_break.svg';
 
 // styled
 import Container from './Home/Container';
@@ -21,6 +22,8 @@ import FeatureList from './Home/Feature/styled/List';
 import Feature from './Home/Feature';
 import ExampleList from './Home/Example/styled/List';
 import Example from './Home/Example';
+import Divider from '../components/Layout/styled/Divider';
+import LikeIncentive from './Home/styled/LikeIncentive';
 
 class Index extends React.Component {
   render() {
@@ -79,21 +82,27 @@ class Index extends React.Component {
             </ExampleList>
           </Container>
 
-          <Container>
-            <h4>{homepage.like_incentive}</h4>
-            <iframe
-              title="Github stars"
-              src={`https://ghbtns.com/github-btn.html?user=${
-                site.projects.github.hn.user
-              }&repo=${site.projects.github.hn.repo}&type=star&count=true`}
-              frameBorder="0"
-              scrolling="0"
-              width="80px"
-              height="20px"
-            />
-            <Link to="https://www.drupal.org/project/hn" target="_blank">
-              <DrupalStarsCount />
-            </Link>
+          <Container background={this.props.theme.backgroundGrey}>
+            <Divider background={getGradient(this.props.theme.gradientMild)} />
+            <LikeIncentive color="#fff">
+              {homepage.like_incentive}
+            </LikeIncentive>
+            <div style={{ textAlign: 'center' }}>
+              <iframe
+                title="Github stars"
+                src={`https://ghbtns.com/github-btn.html?user=${
+                  site.projects.github.hn.user
+                }&repo=${site.projects.github.hn.repo}&type=star&count=true`}
+                frameBorder="0"
+                scrolling="0"
+                width="80px"
+                height="20px"
+              />
+              <Link to="https://www.drupal.org/project/hn" target="_blank">
+                <DrupalStarsCount />
+              </Link>
+              <img style={{ display: 'block',  margin: '0 auto' }} src={LogoSrc} alt="Headless Ninja logo" />
+            </div>
           </Container>
         </main>
       </Fragment>
