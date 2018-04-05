@@ -1,11 +1,10 @@
 import styled from 'styled-components';
-import Link from 'gatsby-link';
 
 // styled
 import Screenshot from './Screenshot';
 import Label from './Label';
 
-export default styled(Link)`
+export default styled.a`
   overflow: hidden;
 
   &:hover {

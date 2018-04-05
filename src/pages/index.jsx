@@ -98,9 +98,9 @@ class Index extends React.Component {
                 width="80px"
                 height="20px"
               />
-              <Link to="https://www.drupal.org/project/hn" target="_blank">
+              <a href="https://www.drupal.org/project/hn" target="_blank">
                 <DrupalStarsCount />
-              </Link>
+              </a>
               <img
                 style={{ display: 'block', margin: '0 auto' }}
                 src={LogoSrc}
