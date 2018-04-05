@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import Link from 'gatsby-link';
+import Link from '../Link';
 import LogoSrc from '../../images/logo.svg';
 import site from '../../../content/site.yml';
 

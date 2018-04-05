@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Link from 'gatsby-link';
+import Link from '../../Link';
 import { getGradient } from '../../../layouts/theme';
 
 export default styled(Link)`

@@ -1,5 +1,5 @@
-import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Link from '../../Link';
 import { getGradient } from '../../../layouts/theme';
 
 export default styled(Link)`
@@ -9,15 +9,17 @@ export default styled(Link)`
   display: inline-block;
   text-align: center;
 
-  &:hover {
-    &::before {
-      opacity: 0.85;
-      ${p =>
-        p.secondary
-          ? `
+  @media (hover) {
+    &:hover {
+      &::before {
+        opacity: 0.85;
+        ${p =>
+          p.secondary
+            ? `
         background-color: rgba(255, 255, 255, 0.3);
       `
-          : ''};
+            : ''};
+      }
     }
   }
 

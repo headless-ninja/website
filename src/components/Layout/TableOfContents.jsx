@@ -1,6 +1,6 @@
 import React from 'react';
-import Link from 'gatsby-link';
 import styled from 'styled-components';
+import Link from '../Link';
 import categories from '../../../content/docs/categories.yml';
 
 class TableOfContents extends React.Component {
