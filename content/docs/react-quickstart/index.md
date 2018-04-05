@@ -9,11 +9,13 @@ To get you started as quickly as possible, you can follow these instructions. If
 Please also make sure you've followed the [Drupal setup guide](/docs/drupal-quickstart).
 
 ## Setting up your React app
+
 Open up your terminal and make sure you've got Node.js with version >= 6 installed. Run `node -v` to verify. Head over to the [Node.js website](https://nodejs.org) to download or update.
 
 After Node.js is installed, run the following commands. They will make sure your React app is running and will open up your brand new app in your browser.
 
 Please make sure to replace `my-app` by your own app name.
+
 ```bash
 npx create-react-app my-app
 cd my-app
@@ -23,25 +25,32 @@ npm start
 Now open up the `my-app` folder in your editor of choice.
 
 ## Setting up Headless Ninja
+
 To get started, run the following command from your `my-app` folder
+
 ```bash
 npm install hn hn-react react-router-dom --save
 ```
+
 Or with Yarn
+
 ```bash
 yarn add hn hn-react react-router-dom
 ```
+
 We'll now do two things:
 1) Connect React to the Drupal site
 2) Use React Router to watch for location changes
 3) Render the page title from Drupal
 
 Start by opening up `src/index.js`. In this file we'll
-- Initialize Headless Ninja with HN's `site.initialize()`
-- Wrap our App in react-router's `<BrowserRouter />`
-- Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
+
+-   Initialize Headless Ninja with HN's `site.initialize()`
+-   Wrap our App in react-router's `<BrowserRouter />`
+-   Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
 
 Replace all contents of `src/index.js` with
+
 ```javascript
 import React from 'react';
 import ReactDOM from 'react-dom';
@@ -66,10 +75,12 @@ import App from './App';
 Please replace "<http://drupal.dev>" with [your Drupal url](/docs/drupal-quickstart).
 
 Now open up `src/App.js`. In this file we'll
-- Make sure HN updates whenever your visitor navigates
-- Map the Content Type we get from Drupal to a React component
+
+-   Make sure HN updates whenever your visitor navigates
+-   Map the Content Type we get from Drupal to a React component
 
 Replace all contents of `src/App.js` with
+
 ```javascript
 import React, { Component } from 'react';
 import { DrupalPage } from 'hn-react';
@@ -100,7 +111,8 @@ export default withRouter(App);
 Now head back to your browser, and you should see the page title as you've entered it in your Drupal homepage.
 
 That's it! Follow the other guides for more detailed instructions and documentation:
-- [waitForHnData()](/docs/reference/react#waitForHnData)
-- [\<DrupalPage />](/docs/reference/react#DrupalPage)
-- [Layouts with Paragraphs](/docs/guides/layouts-with-paragraphs)
-- [Server-side rendering](/docs/guides/server-side-rendering)
+
+-   [waitForHnData()](/docs/reference/react#waitForHnData)
+-   [\\<DrupalPage />](/docs/reference/react#DrupalPage)
+-   [Layouts with Paragraphs](/docs/guides/layouts-with-paragraphs)
+-   [Server-side rendering](/docs/guides/server-side-rendering)

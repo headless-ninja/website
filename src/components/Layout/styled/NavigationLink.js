@@ -3,9 +3,8 @@ import Link from 'gatsby-link';
 import { getGradient } from '../../../layouts/theme';
 
 export default styled(Link)`
-  color: #fff;
+  color: #fff !important;
   background-image: none;
-  text-shadow: none;
   padding: 0 5px 5px;
   margin: 0 10px;
   text-transform: uppercase;

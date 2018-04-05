@@ -25,6 +25,7 @@ To start the php server, run `composer run start-server --timeout 0` in your ter
 In your terminal, the URL of your Drupal installation will show up. Open that URL in your browser and follow the on-screen instructions to install the HN Starterskit.
 
 ## Enable in existing Drupal website
+
 If you have a Drupal website based on Composer, you can run `composer require drupal/hn` to download the latest version of HN. 
 
 If you are running a traditional file-based Drupal project, you can download the HN module from the [Headless Ninja Drupal page](https://www.drupal.org/project/hn) and extract the zip in the `modules` folder.

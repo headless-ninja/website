@@ -9,10 +9,12 @@ _On this page we want to explain everything that's in the `hn-react` package._
 
 ## DrupalPage component
 
-The \<DrupalPage /> component is the most important one when using Headless Ninja. It handles 
+The \\<DrupalPage /> component is the most important one when using Headless Ninja. It handles 
 
 ### Examples
+
 #### Basic example
+
 ```javascript
 import React, { Component } from 'react';
 import { DrupalPage } from 'hn-react';
@@ -44,8 +46,13 @@ export default withRouter(App);
 ### Props
 
 #### `url`
+
 #### `asyncMapper` & `mapper`
+
 #### `layout`
+
 #### `layoutProps`
+
 #### `renderWhileLoadingData`
+
 #### `pageProps`

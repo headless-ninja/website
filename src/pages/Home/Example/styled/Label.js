@@ -14,7 +14,7 @@ export default styled.span`
     bottom: 0;
     left: 0;
     width: 0;
-    height: 2px;
+    height: 3px;
     z-index: 0;
     border-radius: 100px;
     transition: width 0.4s ease;

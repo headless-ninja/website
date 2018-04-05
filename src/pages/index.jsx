@@ -101,7 +101,11 @@ class Index extends React.Component {
               <Link to="https://www.drupal.org/project/hn" target="_blank">
                 <DrupalStarsCount />
               </Link>
-              <img style={{ display: 'block',  margin: '0 auto' }} src={LogoSrc} alt="Headless Ninja logo" />
+              <img
+                style={{ display: 'block', margin: '0 auto' }}
+                src={LogoSrc}
+                alt="Headless Ninja logo"
+              />
             </div>
           </Container>
         </main>
