@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import LogoSrc from '../../images/logo.svg';
+import site from '../../../content/site.yml';
 
 // styled
 import NavContainer from './styled/NavContainer';
@@ -18,7 +19,17 @@ class Navigation extends React.Component {
           </Link>
         )}
         <NavigationLink to="/docs">Docs</NavigationLink>
-        <NavigationLink to="#source-code">Source code</NavigationLink>
+        <NavigationLink
+          to={`https://github.com/${site.projects.github.hn.user}/${
+            site.projects.github.hn.repo
+          }`}
+          target="_blank"
+        >
+          Github
+        </NavigationLink>
+        <NavigationLink to={site.projects.drupal.hn.page} target="_blank">
+          Drupal.org
+        </NavigationLink>
       </NavContainer>
     );
   }
