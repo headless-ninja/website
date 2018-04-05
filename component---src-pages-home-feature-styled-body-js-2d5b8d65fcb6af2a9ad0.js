@@ -1,2 +1,0 @@
-webpackJsonp([20225762157585],{49:function(n,e,t){"use strict";function f(n){return n&&n.__esModule?n:{default:n}}function o(n,e){return n.raw=e,n}e.__esModule=!0;var u=o(["\n  font-size: 16px;\n  line-height: 26px;\n  color: #fff;\n"],["\n  font-size: 16px;\n  line-height: 26px;\n  color: #fff;\n"]),i=t(3),l=f(i);e.default=l.default.p(u),n.exports=e.default}});
-//# sourceMappingURL=component---src-pages-home-feature-styled-body-js-2d5b8d65fcb6af2a9ad0.js.map

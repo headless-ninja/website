@@ -1,2 +1,0 @@
-webpackJsonp([0xb1180672afd6],{48:function(n,e,t){"use strict";function d(n){return n&&n.__esModule?n:{default:n}}function o(n,e){return n.raw=e,n}e.__esModule=!0;var u=o(["\n  width: 100%;\n  background-size: cover;\n  padding-bottom: ","%;\n"],["\n  width: 100%;\n  background-size: cover;\n  padding-bottom: ","%;\n"]),r=t(3),a=d(r);e.default=a.default.figure(u,62.5),n.exports=e.default}});
-//# sourceMappingURL=component---src-pages-home-example-styled-screenshot-js-d837f449bbdc514f8181.js.map

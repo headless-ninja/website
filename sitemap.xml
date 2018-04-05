@@ -21,23 +21,5 @@
 <url> <loc>http://headless.ninja/docs/reference/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/docs/reference/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Container/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Container/styled/Container/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Container/styled/ContainerInner/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Example/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Example/styled/Label/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Example/styled/List/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Example/styled/Screenshot/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Feature/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Feature/styled/Body/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Feature/styled/Heading/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Feature/styled/List/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Feature/styled/Wrapper/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Header/styled/Header/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/styled/ShortExplanationBody/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/styled/TagLine/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Title/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/Home/Title/styled/Title/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>http://headless.ninja/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
