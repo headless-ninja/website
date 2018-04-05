@@ -8,9 +8,9 @@ In order to compress (gzip) all your requests, you can let all communications go
 
 By setting up the proxy, we enable the following features:
 
--   Compression (gzip) for all communications between the client and server. Drupal doesn't support this, but Express does. This can save up to 90% of the response size.
--   Mask your Drupal website url.
--   Certain static files like `sitemap.xml` & `robots.txt` will be proxied to Drupal, instead of being served through HN (like all paths by default).
+- Compression (gzip) for all communications between the client and server. Drupal doesn't support this, but Express does. This can save up to 90% of the response size.
+- Mask your Drupal website url.
+- Certain static files like `sitemap.xml` & `robots.txt` will be proxied to Drupal, instead of being served through HN (like all paths by default).
 
 In the guide you will learn how to setup this proxy.
 
@@ -52,9 +52,9 @@ Please replace "<http://drupal.dev>" with [your Drupal url](/docs/drupal-quickst
 
 We now made sure that
 
--   every request to `react.dev/hn`, will be proxied to `drupal.dev/hn`.
--   bots go to Drupal for your sitemaps.
--   bots can find the sitemap on `/sitemap.xml` by serving a `robots.txt` file.
+- every request to `react.dev/hn`, will be proxied to `drupal.dev/hn`.
+- bots go to Drupal for your sitemaps.
+- bots can find the sitemap on `/sitemap.xml` by serving a `robots.txt` file.
 
 ## Use the proxy
 

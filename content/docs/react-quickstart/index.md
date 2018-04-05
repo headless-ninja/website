@@ -45,9 +45,9 @@ We'll now do two things:
 
 Start by opening up `src/index.js`. In this file we'll
 
--   Initialize Headless Ninja with HN's `site.initialize()`
--   Wrap our App in react-router's `<BrowserRouter />`
--   Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
+- Initialize Headless Ninja with HN's `site.initialize()`
+- Wrap our App in react-router's `<BrowserRouter />`
+- Tell the React app to wait for our Drupal to respond with data by wrapping it in HN's `waitForHnData()`.
 
 Replace all contents of `src/index.js` with
 
@@ -76,8 +76,8 @@ Please replace "<http://drupal.dev>" with [your Drupal url](/docs/drupal-quickst
 
 Now open up `src/App.js`. In this file we'll
 
--   Make sure HN updates whenever your visitor navigates
--   Map the Content Type we get from Drupal to a React component
+- Make sure HN updates whenever your visitor navigates
+- Map the Content Type we get from Drupal to a React component
 
 Replace all contents of `src/App.js` with
 
@@ -112,7 +112,7 @@ Now head back to your browser, and you should see the page title as you've enter
 
 That's it! Follow the other guides for more detailed instructions and documentation:
 
--   [waitForHnData()](/docs/reference/react#waitForHnData)
--   [\\<DrupalPage />](/docs/reference/react#DrupalPage)
--   [Layouts with Paragraphs](/docs/guides/layouts-with-paragraphs)
--   [Server-side rendering](/docs/guides/server-side-rendering)
+- [waitForHnData()](/docs/reference/react#waitForHnData)
+- [\\<DrupalPage />](/docs/reference/react#DrupalPage)
+- [Layouts with Paragraphs](/docs/guides/layouts-with-paragraphs)
+- [Server-side rendering](/docs/guides/server-side-rendering)
