@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import Helmet from 'react-helmet';
 import { withTheme } from 'styled-components';
-import Link from 'gatsby-link';
 
 import site from '../../content/site.yml';
 import homepage from '../../content/homepage.yml';
@@ -98,7 +97,10 @@ class Index extends React.Component {
                 width="80px"
                 height="20px"
               />
-              <a href="https://www.drupal.org/project/hn" target="_blank">
+              <a
+                href="https://www.drupal.org/project/hn"
+                rel="noopener noreferrer"
+              >
                 <DrupalStarsCount />
               </a>
               <img
