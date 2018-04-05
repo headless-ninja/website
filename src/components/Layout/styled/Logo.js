@@ -5,4 +5,5 @@ export default styled.img`
   height: 35px;
   vertical-align: middle;
   margin: 0;
+  padding-left: 7px;
 `;

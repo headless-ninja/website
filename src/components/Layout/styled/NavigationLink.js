@@ -12,7 +12,7 @@ export default styled(Link)`
   font-size: 14px;
   position: relative;
   vertical-align: middle;
-  top: 1px;
+  top: 4px;
 
   &::after {
     content: '';

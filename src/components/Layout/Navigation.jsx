@@ -6,6 +6,7 @@ import site from '../../../content/site.yml';
 
 // styled
 import NavContainer from './styled/NavContainer';
+import NavInner from './styled/NavInner';
 import NavigationLink from './styled/NavigationLink';
 import Logo from './styled/Logo';
 
@@ -18,18 +19,20 @@ class Navigation extends React.Component {
             <Logo src={LogoSrc} alt="Headless Ninja logo" />
           </Link>
         )}
-        <NavigationLink to="/docs">Docs</NavigationLink>
-        <NavigationLink
-          to={`https://github.com/${site.projects.github.hn.user}/${
-            site.projects.github.hn.repo
-          }`}
-          target="_blank"
-        >
-          Github
-        </NavigationLink>
-        <NavigationLink to={site.projects.drupal.hn.page} target="_blank">
-          Drupal.org
-        </NavigationLink>
+        <NavInner>
+          <NavigationLink to="/docs">Docs</NavigationLink>
+          <NavigationLink
+            to={`https://github.com/${site.projects.github.hn.user}/${
+              site.projects.github.hn.repo
+            }`}
+            target="_blank"
+          >
+            Github
+          </NavigationLink>
+          <NavigationLink to={site.projects.drupal.hn.page} target="_blank">
+            Drupal.org
+          </NavigationLink>
+        </NavInner>
       </NavContainer>
     );
   }
