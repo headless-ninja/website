@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
-<url> <loc>http://headless.ninja/offline-plugin-app-shell-fallback/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/concepts/alternatives</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/concepts/data-structure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/concepts/request-endpoint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/drupal-quickstart/alter-response</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/drupal-quickstart/enabling-submodules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/drupal-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/404-and-403</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/altering-entities</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/content-listings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/layouts-with-paragraphs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/proxy-drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/server-side-rendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/guides/views</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/react-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/react-quickstart/query-entities-and-references</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/reference/drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/reference/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/docs/reference/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>http://headless.ninja/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/offline-plugin-app-shell-fallback/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/concepts/alternatives</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/concepts/data-structure</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/concepts/request-endpoint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/drupal-quickstart/alter-response</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/drupal-quickstart/enabling-submodules</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/drupal-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/404-and-403</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/altering-entities</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/content-listings</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/layouts-with-paragraphs</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/proxy-drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/server-side-rendering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/guides/views</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/react-quickstart</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/react-quickstart/query-entities-and-references</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/reference/drupal</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/reference/javascript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/docs/reference/react</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://headless.ninja/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
