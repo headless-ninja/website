@@ -3,7 +3,7 @@
   "dependencies": {
     "gatsby": "^1.8.11",
     "gatsby-link": "^1.6.7",
-    "gatsby-plugin-google-analytics": "^1.0.3",
+    "gatsby-plugin-google-tagmanager": "^1.0.17",
     "gatsby-plugin-manifest": "^1.0.3",
     "gatsby-plugin-offline": "^1.0.3",
     "gatsby-plugin-react-helmet": "^2.0.6",
