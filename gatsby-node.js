@@ -18,7 +18,7 @@ exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
     createNodeField({
       node,
       name: 'slug',
-      value: `/docs${slug}`,
+      value: slug === '/' ? '/docs' : `/docs${slug}`,
     });
   }
 };
