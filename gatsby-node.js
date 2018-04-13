@@ -1,5 +1,10 @@
 const path = require('path');
+const fs = require('fs');
+const { promisify } = require('util');
 const { createFilePath } = require('gatsby-source-filesystem');
+
+const rename = promisify(fs.rename);
+const writeFile = promisify(fs.writeFile);
 
 exports.onCreateNode = ({ node, boundActionCreators, getNode }) => {
   const { createNodeField } = boundActionCreators;
@@ -49,3 +54,43 @@ exports.createPages = async ({ graphql, boundActionCreators }) => {
     });
   });
 };
+
+exports.onPostBuild = ({ store }) =>
+  Promise.all(
+    store.getState().pages.map(async ({ path: p }) => {
+      // Don't change the homepage.
+      if (p === '/') return Promise.resolve();
+
+      // Don't allow paths that already end with .html or with a slash.
+      if (/(\.html?|\/)$/i.test(p)) {
+        throw new Error(
+          `The path ${p} ends with .html or a slash. Please change it's path.`,
+        );
+      }
+
+      // Get the generated file.
+      const fullPath = path.resolve(`public${p}/index.html`);
+      if (!fullPath) {
+        throw new Error(`The page ${p} could not be found.`);
+      }
+
+      // Rename the generated file from docs/index.html to docs.html
+      await rename(fullPath, fullPath.replace('/index.html', '.html'));
+
+      // Create a redirect from the version with a slash.
+      return writeFile(
+        fullPath,
+        `<!DOCTYPE html>
+        <html lang="en-US">
+          <meta charset="utf-8">
+          <title>Redirecting&hellip;</title>
+          <link rel="canonical" href="${p}">
+          <meta http-equiv="refresh" content="0; url=${p}">
+          <meta name="robots" content="noindex">
+          <h1>Redirecting&hellip;</h1>
+          <a href="${p}">Click here if you are not redirected.</a>
+          <script>location="${p}"</script>
+        </html>`.replace(/(\r\n|\r|\n)+( )+/g, ''),
+      );
+    }),
+  );

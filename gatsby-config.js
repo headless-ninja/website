@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://headless.ninja`,
   },
   plugins: [
+    'gatsby-plugin-remove-trailing-slashes',
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
