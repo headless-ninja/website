@@ -38,6 +38,7 @@ export default class LessonTemplate extends React.Component {
 const BodyGrid = styled.div`
   height: 100vh;
   display: grid;
+  grid-template-rows: auto 1fr;
   grid-template-columns: 300px 1fr;
 
   @media screen and (max-width: 600px) {
